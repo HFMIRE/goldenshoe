@@ -1,0 +1,46 @@
+import { Box, Stack, Button, Text, IconButton } from "@chakra-ui/react";
+import { AddIcon, MinusIcon } from "@chakra-ui/icons";
+import { useState } from "react";
+const Counter = (props) => {
+  const [count, setCount] = useState(0);
+  console.log(props);
+  const obj = {
+    productId: "hey",
+    qty: count,
+  };
+  console.log(obj);
+  return (
+    <Box alignProducts={"baseline"}>
+      <Stack direction={{ base: "column", md: "row" }} spacing={4} p={3}>
+        <IconButton
+          icon={<AddIcon />}
+          onClick={() => {
+            setCount(count + 1);
+          }}
+        />
+        <Box color="white">{count}</Box>
+        <IconButton
+          icon={<MinusIcon />}
+          onClick={() => {
+            setCount(count - 1);
+          }}
+        />
+      </Stack>
+      <Box p={3}>
+        <Button
+          p={5}
+          rounded={"5px"}
+          bg={"orange.500"}
+          color={"orange.50"}
+          _hover={{
+            bg: "orange.300",
+          }}
+        >
+          Add to cart
+        </Button>
+      </Box>
+    </Box>
+  );
+};
+
+export default Counter;

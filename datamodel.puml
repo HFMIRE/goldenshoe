@@ -1,0 +1,45 @@
+
+@startuml Restaurants 
+
+
+entity AuthZero {
+name 
+email 
+email_verified
+sub 
+}
+
+entity User {
+    auth0: AuthZero
+    id: AuthZero[sub]
+    dob
+}
+entity Products {
+    id,
+    name,
+    description,
+    dietary,
+    allergies,
+    price,
+    type,
+    menu_id,
+}
+
+entity Orders {
+    userId,
+    product : order
+    paymentStatus,
+    order_total,
+
+}
+entity Order {
+    id
+    productId: [{quantity, productName}]
+    orderStatus,
+}
+
+Orders::user_id -- User::id
+Orders::orders_id -- Order::id
+Order::order_id -- Products::id
+
+@enduml
