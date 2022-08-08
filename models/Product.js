@@ -6,7 +6,10 @@ const ProductSchema = new mongoose.Schema({
   brand: String,
   price: Number,
   type: String,
+  category: String, 
   image: String,
+  color: String, 
+  size: [Mixed] 
 });
 
 const Product = mongoose.models.Product || mongoose.model("Product", ProductSchema);
