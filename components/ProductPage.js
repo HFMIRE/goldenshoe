@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import AccordianComp from "./ui/AccordianComp";
 import { useState } from "react";
-import { useUser } from "@auth0/nextjs-auth0";
+
 
 const defaultCart = {
   products: {},
@@ -25,7 +25,7 @@ const ProductPage = ({ product, error }) => {
   // const { addToCart } = useCart();
   const { data } = product;
   const id = data._id;
-  const { user } = useUser();
+
   const [qty, setQty] = useState(0);
   const [cart, updateCart] = useState(defaultCart);
   // console.log("Data", data)

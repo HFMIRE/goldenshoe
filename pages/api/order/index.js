@@ -2,7 +2,7 @@
 import dbConnect from "../../../utils/dbConnect";
 import Order from "../../../models/Order";
 
-export default async (req, res) => {
+const OrderApi = async (req, res) => {
   await dbConnect();
   const { method } = req;
   switch (method) {
@@ -32,3 +32,5 @@ export default async (req, res) => {
       }
   }
 };
+
+export default OrderApi; 

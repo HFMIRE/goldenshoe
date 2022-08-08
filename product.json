@@ -1,6 +1,6 @@
 [
 {  
-    "name": "Chuck Taylor All Star", 
+    "name":"Chuck Taylor All Star", 
     "description": "The most iconic converse ever",
     "brand": "Converse",
     "price": "59.99",
@@ -34,7 +34,7 @@
     "size ": [3, 4, 5, 6, 7, 8, 9, 10, 11], 
     "image": "http://localhost:3000/assets/andrew-m-aRD19xeeHaQ-unsplash.jpg"
 
-}
+},
 {
     "name": "Air Jordan One High", 
     "description": "The Jordan One",
@@ -45,7 +45,7 @@
     "color": "pink", 
     "size ": [3, 4, 5, 6, 7, 8, 9, 10, 11], 
     "image": "http://localhost:3000/assets/brad-starkey-Bowrbqz1kgw-unsplash.jpg"
-}
+},
 {
     "name": "UltraBoost 345", 
     "description": "Providng the biggest boost in life",
@@ -57,7 +57,7 @@
     "size ": [ 5, 6, 7, 8, 9, 10, 11], 
     "image": "http://localhost:3000/assets/cj-dayrit-2reXfzCi0Kg-unsplash.jpg"
 
-}
+}, 
 {
     "name": "YaHweH T-Shirt", 
     "description": "The ultimate black shirt",

@@ -3,7 +3,7 @@ import Product from "../../../models/Product";
 
 // this display the data  - information of the products on the menu
 
-export default async (req, res) => {
+const ProductApi = async (req, res) => {
   await dbConnect();
   const { method } = req;
   switch (method) {
@@ -27,3 +27,4 @@ export default async (req, res) => {
       }
   }
 };
+export default ProductApi; 

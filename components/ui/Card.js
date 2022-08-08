@@ -1,4 +1,10 @@
-import { Box, Image, HStack, LinkBox } from "@chakra-ui/react";
+import { Box, Image, HStack, LinkBox  } from "@chakra-ui/react";
+import {
+  Alert,
+  AlertIcon,
+  AlertTitle,
+  AlertDescription,
+} from '@chakra-ui/react'
 import Link from "next/Link";
 
 export default function Card({ product, error }) {

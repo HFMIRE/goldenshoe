@@ -1,6 +1,5 @@
 import {
   Accordion,
-  AccordionProduct,
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
@@ -13,7 +12,6 @@ const AccordianComp = ({ allergies, dietary }) => {
   return (
     <Box p={4}>
       <Accordion defaultIndex={[0]} allowMultiple color={"orange.100"}>
-        <AccordionProduct>
           <h2>
             <AccordionButton>
               <Box flex="1" textAlign="left">
@@ -23,10 +21,9 @@ const AccordianComp = ({ allergies, dietary }) => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>{dietary}</AccordionPanel>
-        </AccordionProduct>
 
         {!(allergies === "No") ? null : (
-          <AccordionProduct>
+          <>
             <h2>
               <AccordionButton>
                 <Box flex="1" textAlign="left">
@@ -36,7 +33,7 @@ const AccordianComp = ({ allergies, dietary }) => {
               </AccordionButton>
             </h2>
             <AccordionPanel pb={4}>{allergies}</AccordionPanel>
-          </AccordionProduct>
+            </>
         )}
       </Accordion>
     </Box>

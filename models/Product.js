@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+
 const ProductSchema = new mongoose.Schema({
   name: String,
   description: String,
@@ -9,7 +10,7 @@ const ProductSchema = new mongoose.Schema({
   category: String, 
   image: String,
   color: String, 
-  size: [Mixed] 
+  size: [mongoose.Mixed]
 });
 
 const Product = mongoose.models.Product || mongoose.model("Product", ProductSchema);
