@@ -16,10 +16,15 @@ export default function Product() {
 
   return (
     <Box>
-      <Layout />
-      {product && data && (
-        <ProductPage product={product} error={error} addToCart={addToCart} />
+      <Layout>
+        <Box p={5} mb={5}>
+        {product && data && (
+        <ProductPage product={product} error={error}
+        //  addToCart={addToCart}
+          />
       )}
+        </Box>
+      </Layout>
     </Box>
   );
 }

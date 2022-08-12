@@ -9,16 +9,16 @@ import {
   MenuProduct,
   MenuDivider,
 } from "@chakra-ui/react";
-import { useUser } from "@auth0/nextjs-auth0";
+
 
 const Log = () => {
-  const { user, error, isLoading } = useUser();
+
 
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>{error.message}</div>;
   return (
     <Box>
-      {user && user ? (
+    
         <Box>
           <Menu>
             <MenuButton
@@ -54,7 +54,7 @@ const Log = () => {
             Login
           </Button>
         </Link>
-      )}
+    
     </Box>
   );
 };

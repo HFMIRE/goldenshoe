@@ -1,113 +1,76 @@
 import {
+  Container,
+  SimpleGrid,
+  Image,
   Flex,
   Heading,
-  Image,
-  Stack,
   Text,
-  Box,
+  Stack,
   Button,
+  Icon,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  Select,
+  Box
 } from "@chakra-ui/react";
-import {
-  Alert,
-  AlertIcon,
-  AlertTitle,
-  AlertDescription,
-} from "@chakra-ui/react";
-import AccordianComp from "./ui/AccordianComp";
-import { useState } from "react";
+import AccordionComp from "./ui/AccordionComp";
 
+const CircleIcon = (props) => (
+  <Icon viewBox="0 0 200 200" {...props}>
+    <path
+      fill="currentColor"
+      d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"
+    />
+  </Icon>
+);
 
-const defaultCart = {
-  products: {},
-};
-
-const ProductPage = ({ product, error }) => {
-  // const { addToCart } = useCart();
+export default function ProductPage({ product }) {
   const { data } = product;
-  const id = data._id;
-
-  const [qty, setQty] = useState(0);
-  const [cart, updateCart] = useState(defaultCart);
-  // console.log("Data", data)
-  const cartProducts = [];
-
-  console.log("cartProducts", cartProducts);
-  console.log("cart", cart);
-  function addToCart({ id }) {
-    updateCart((prev) => {
-      let cart = { ...prev };
-      console.log(cart.products[id]);
-      if (cart.products[id]) {
-      } else {
-        console.log(id);
-        let newCartProduct = {
-          id: id,
-          quantity: 1,
-          pricePerUnit: data.price,
-        };
-        cartProducts.push(newCartProduct);
-      }
-    });
-  }
-
-  if (error) {
-    <Alert status="error">
-      <AlertIcon />
-      <AlertTitle>Sorry</AlertTitle>
-      <AlertDescription>This page is unavailable</AlertDescription>
-    </Alert>;
-  }
-
   return (
-    <Stack minH={"80vh"} direction={{ base: "column", md: "row" }} mr={50}>
-      <Flex p={4} flex={1} align={"center"} justify={"center"}>
-        <Stack spacing={5} w={"full"} maxW={"lg"}>
-          <Heading
-            fontWeight={400}
-            fontSize={{ base: "2xl", sm: "3xl", md: "5xl" }}
-            color="
-              orange.100"
-            lineHeight={"110%"}
-          >
-            {data.name}
-          </Heading>
-          <Text fontSize={{ base: "sm", lg: "md" }} color={"brand.100"} p={3}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia,molestiae quas vel sint commodi repudiandae consequuntur
-            voluptatum laborum. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi
-            repudiandae consequuntur voluptatum laborum.
+    <Container maxW={"5xl"} py={12}>
+      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={20}>
+        <Flex>
+          <Image
+            rounded={"md"}
+            alt={product.name}
+            src={data.image}
+            objectFit={""}
+          />
+        </Flex>
+        <Stack spacing={4}>
+          <Breadcrumb>
+            <BreadcrumbItem>
+              <BreadcrumbLink href="#">Products</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbItem isCurrentPage>
+              <BreadcrumbLink href="#">{data.name}</BreadcrumbLink>
+            </BreadcrumbItem>
+          </Breadcrumb>
+          <Heading>{data.name}</Heading>
+          <Text color={"gray.500"} fontSize={"lg"}>
+            {data.description}
           </Text>
-          <AccordianComp allergy={data.allergies} dietary={data.dietary} />
-          <Box alignProducts={"baseline"}>
-            <Box p={3}>
-              <Button
-                p={5}
-                rounded={"5px"}
-                bg={"orange.500"}
-                color={"orange.50"}
-                _hover={{
-                  bg: "orange.300",
-                }}
-                onClick={() => {
-                  addToCart({ id });
-                }}
-              >
-                Add to cart
-              </Button>
+          {
+            data.color === "multi" ? 
+            <Box  bgGradient='linear(to-r, green.200, pink.500)'  border={'2px'} borderRadius='25px' boxSize={9}/>
+            : 
+            <Box borderColor='gray.200' border={'2px'} borderRadius='25px' boxSize={9}>
+            <CircleIcon boxSize={8} color={data.color}/>
             </Box>
-          </Box>
+          }
+    
+          <Select placeholder="Select size" p={1}>
+            {data &&
+              data.size?.map((s, idx) => {
+                console.log(s);
+                return <option value={s} key={idx}>{s}</option>;
+              })}
+          </Select>
+          <Button colorScheme="blue" p={3}>Add to cart</Button>
+          <AccordionComp/>
         </Stack>
-      </Flex>
-      <Flex flex={0.6}>
-        <Image
-          alt={" product Image"}
-          objectFit={"scale-down"}
-          src={data.image}
-        />
-      </Flex>
-    </Stack>
+      </SimpleGrid>
+    </Container>
   );
-};
-
-export default ProductPage;
+}

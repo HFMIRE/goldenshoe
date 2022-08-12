@@ -1,25 +1,24 @@
 import Layout from "../components/Layout";
+import { server } from "../config";
 import ProductList from "../components/ProductList";
-const allProducts = () => {
-  // console.log(products);
+import AlertMsg from "../components/ui/AlertMsg";
+const allProducts = ({ products }) => {
+  if (!products.success) {
+    <AlertMsg />;
+  }
   return (
     <Layout>
-      <ProductList />
+      <ProductList product={products.data} />
     </Layout>
   );
 };
-// export async function getStaticProps() {
-//   // Call an external API endpoint to get posts.
-//   // You can use any data fetching library
-//   const res = await fetch("/api/product");
-//   const products = await res.json();
-
-//   // By returning { props: { posts } }, the Blog component
-//   // will receive `posts` as a prop at build time
-//   return {
-//     props: {
-//       products,
-//     },
-//   };
-// }
 export default allProducts;
+export async function getStaticProps() {
+  const res = await fetch(`${server}/api/product`);
+  const products = await res.json();
+  return {
+    props: {
+      products,
+    },
+  };
+}

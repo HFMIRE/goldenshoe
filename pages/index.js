@@ -1,12 +1,11 @@
+import { LandingPage } from "../components/LandingPage";
 import Layout from "../components/Layout";
 
 const home = () => {
   return (
     <div>
       <Layout>
-        <div>
-          <h1>heeedd</h1>
-        </div>
+        <LandingPage/>
       </Layout>
     </div>
   );

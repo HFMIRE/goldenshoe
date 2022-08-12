@@ -1,5 +1,6 @@
 [
 {  
+    "_id":"", 
     "name":"Chuck Taylor All Star", 
     "description": "The most iconic converse ever",
     "brand": "Converse",
@@ -7,7 +8,7 @@
     "category": "Unisex",
     "type": "trainer",
     "color": "black", 
-    "size " : [3, 4, 5, 6, 7, 8, 9, 10, 11], 
+    "size" : [3, 4, 5, 6, 7, 8, 9, 10, 11], 
     "image": "http://localhost:3000/assets/camila-damasio-mWYhrOiAgmA-unsplash.jpg"
 
 }, 
@@ -19,7 +20,7 @@
     "category": "Unisex",
     "type": "Equipment",
     "color": "black", 
-    "size " : ["One Size"], 
+    "size" : ["One Size"], 
     "image": "http://localhost:3000/assets/anastasiia-rozumna-yBYt07MdNi8-unsplash.jpg"
 
 }, 
@@ -31,7 +32,7 @@
     "category": "Men",
     "type": "trainer",
     "color": "white", 
-    "size ": [3, 4, 5, 6, 7, 8, 9, 10, 11], 
+    "size": [3, 4, 5, 6, 7, 8, 9, 10, 11], 
     "image": "http://localhost:3000/assets/andrew-m-aRD19xeeHaQ-unsplash.jpg"
 
 },
@@ -43,7 +44,7 @@
     "category": "Unisex",
     "type": "trainer",
     "color": "pink", 
-    "size ": [3, 4, 5, 6, 7, 8, 9, 10, 11], 
+    "size": [3, 4, 5, 6, 7, 8, 9, 10, 11], 
     "image": "http://localhost:3000/assets/brad-starkey-Bowrbqz1kgw-unsplash.jpg"
 },
 {
@@ -54,7 +55,7 @@
     "category": "Women",
     "type": "trainer",
     "color": "blue", 
-    "size ": [ 5, 6, 7, 8, 9, 10, 11], 
+    "size": [ 5, 6, 7, 8, 9, 10, 11], 
     "image": "http://localhost:3000/assets/cj-dayrit-2reXfzCi0Kg-unsplash.jpg"
 
 }, 
@@ -66,7 +67,7 @@
     "price": "35.00",
     "type": "Clothes",
     "color": "black", 
-    "size ": ["s","m", "l", "xl", "xxl"], 
+    "size": ["s","m", "l", "xl", "xxl"], 
     "image": "http://localhost:3000/assets/cj-dayrit-2reXfzCi0Kg-unsplash.jpg"
 
 }, 
@@ -78,7 +79,7 @@
     "price": "135.00",
     "type": "trainer",
     "color": "grey", 
-    "size ": [ 5, 6, 7, 8, 9, 10, 11], 
+    "size": [ 5, 6, 7, 8, 9, 10, 11], 
     "image": "http://localhost:3000/assets/filip-baotic-RbRSCEEhmiw-unsplash.jpg"
 
 }, 
@@ -90,7 +91,7 @@
     "price": "165.00",
     "type": "trainer",
     "color": "multi", 
-    "size ": [ 5, 6, 7, 8, 9, 10, 11], 
+    "size": [ 5, 6, 7, 8, 9, 10, 11], 
     "image": "http://localhost:3000/assets/hemesh-patil-Kv1GtuqBVIY-unsplash.jpg"
 
 }, 
@@ -102,7 +103,7 @@
     "price": "195.00",
     "type": "trainer",
     "color": "black", 
-    "size ": [ 5, 6, 7, 8, 9, 10, 11], 
+    "size": [ 5, 6, 7, 8, 9, 10, 11], 
     "image": "http://localhost:3000/assets/hemesh-patil-Kv1GtuqBVIY-unsplash.jpg"
 
 },
@@ -114,7 +115,7 @@
     "price": "150.00",
     "type": "trainer",
     "color": "multi", 
-    "size ": [ 5, 6, 7, 8, 9, 10, 11], 
+    "size": [ 5, 6, 7, 8, 9, 10, 11], 
     "image": "http://localhost:3000/assets/irene-kredenets-dwKiHoqqxk8-unsplash.jpg"
 
 }, 
@@ -126,7 +127,7 @@
     "price": "75.00",
     "type": "trainer",
     "color": "white", 
-    "size ": [ 5, 6, 7, 8, 9, 10, 11], 
+    "size": [ 5, 6, 7, 8, 9, 10, 11], 
     "image": "http://localhost:3000/assets/jay-wennington-4aSf1J_vjA4-unsplash.jpg"
 
 }, 
@@ -138,7 +139,7 @@
     "price": "115.00",
     "type": "trainer",
     "color": "orange", 
-    "size ": [ 5, 6, 7, 8, 9, 10, 11], 
+    "size": [ 5, 6, 7, 8, 9, 10, 11], 
     "image": "http://localhost:3000/assets/maksim-larin-1vy2QcZd5FU-unsplash.jpg"
 
 }, {
@@ -149,7 +150,7 @@
     "price": "15.00",
     "type": "Clothes",
     "color": "white", 
-    "size ": ["One Size"], 
+    "size": ["One Size"], 
     "image": "http://localhost:3000/assets/mediamodifier-t8HiP3e5abg-unsplash.jpg"
 },
 {
@@ -160,7 +161,7 @@
     "price": "15.00",
     "type": "Clothes",
     "color": "grey", 
-    "size ": ["One Size"], 
+    "size": ["One Size"], 
     "image": "http://localhost:3000/assets/yang-deng-2loKxdi6Hmo-unsplash.jpg"
 }, 
 {
@@ -171,7 +172,7 @@
     "price": "75.00",
     "type": "trainer",
     "color": "white", 
-    "size ": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
     "image": "http://localhost:3000/assets/mnz-BeClz11lyXY-unsplash.jpg"
 }, 
 {
@@ -182,7 +183,7 @@
     "price": "275.00",
     "type": "trainer",
     "color": "white", 
-    "size ": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
     "image": "http://localhost:3000/assets/mnz-g3C5qZhNzQg-unsplash.jpg"
 }, 
 {
@@ -193,7 +194,7 @@
     "price": "175.00",
     "type": "trainer",
     "color": "white", 
-    "size ": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
     "image": "http://localhost:3000/assets/mnz-lCg-GLhluDU-unsplash.jpg"
 }, 
 {
@@ -204,7 +205,7 @@
     "price": "105.00",
     "type": "trainer",
     "color": "blue", 
-    "size ": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
     "image": "http://localhost:3000/assets/mnz-mCRFMMRoNJE-unsplash.jpg"
 }, 
 {
@@ -215,7 +216,7 @@
     "price": "95.00",
     "type": "trainer",
     "color": "grey", 
-    "size ": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
     "image": "http://localhost:3000/assets/mnz-MdsbS4UGZqg-unsplash.jpg"
 }, {
     "name": "Orignal 345", 
@@ -225,7 +226,7 @@
     "price": "95.00",
     "type": "trainer",
     "color": "grey", 
-    "size ": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
     "image": "http://localhost:3000/assets/mnz-Srj5F1y7p0k-unsplash.jpg"
 }, {
     "name": "Air Jordan Two High", 
@@ -235,7 +236,7 @@
     "price": "195.00",
     "type": "trainer",
     "color": "grey", 
-    "size ": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
     "image": "http://localhost:3000/assets/mnz-v13tnV6D9lw-unsplash.jpg"
 }, 
 {
@@ -246,7 +247,7 @@
     "price": "115.00",
     "type": "trainer",
     "color": "orange", 
-    "size ": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
     "image": "http://localhost:3000/assets/mutzii-fmDCrqPQKog-unsplash.jpg"
 }, 
 {
@@ -257,7 +258,7 @@
     "price": "115.00",
     "type": "trainer",
     "color": "red", 
-    "size ": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
     "image": "http://localhost:3000/assets/paul-gaudriault-a-QH9MAAVNI-unsplash.jpg"
 }, 
 {
@@ -268,7 +269,7 @@
     "price": "115.00",
     "type": "trainer",
     "color": "multi", 
-    "size ": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
     "image": "http://localhost:3000/assets/omar-prestwich-jLEGurepDco-unsplash.jpg"
 }, 
 {
@@ -279,7 +280,7 @@
     "price": "295.00",
     "type": "trainer",
     "color": "red", 
-    "size ": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
     "image": "http://localhost:3000/assets/revolt-164_6wVEHfI-unsplash.jpg"
 }, 
 {
@@ -290,7 +291,7 @@
     "price": "35.00",
     "type": "Clothes",
     "color": "black", 
-    "size ": ["s","m", "l", "xl", "xxl"], 
+    "size": ["s","m", "l", "xl", "xxl"], 
     "image": "http://localhost:3000/assets/ryan-hoffman-6Nub980bI3I-unsplash.jpg"
 }, 
 {
@@ -301,7 +302,7 @@
     "price": "35.00",
     "type": "Clothes",
     "color": "black", 
-    "size ": ["s","m", "l", "xl", "xxl"], 
+    "size": ["s","m", "l", "xl", "xxl"], 
     "image": "http://localhost:3000/assets/ryan-hoffman-982Nb-awyVE-unsplash.jpg"
 }, 
 {
@@ -312,7 +313,7 @@
     "price": "35.00",
     "type": "Clothes",
     "color": "black", 
-    "size ": ["s","m", "l", "xl", "xxl"], 
+    "size": ["s","m", "l", "xl", "xxl"], 
     "image": "http://localhost:3000/assets/ryan-hoffman-A7f7XRKgUWc-unsplash.jpg"
 }, 
 {
@@ -323,7 +324,7 @@
     "price": "35.00",
     "type": "Clothes",
     "color": "black", 
-    "size ": ["s","m", "l", "xl", "xxl"], 
+    "size": ["s","m", "l", "xl", "xxl"], 
     "image": "http://localhost:3000/assets/ryan-hoffman-Cs4GVbMqKGY-unsplash.jpg"
 }, 
 {
@@ -334,7 +335,7 @@
     "price": "35.00",
     "type": "Clothes",
     "color": "black", 
-    "size ": ["s","m", "l", "xl", "xxl"], 
+    "size": ["s","m", "l", "xl", "xxl"], 
     "image": "http://localhost:3000/assets/ryan-hoffman-u6n1HrW0sdQ-unsplash.jpg"
 }, 
 {
@@ -345,7 +346,7 @@
     "price": "25.00",
     "type": "Equipment",
     "color": "black", 
-    "size ": ["One Size"], 
+    "size": ["One Size"], 
     "image": "http://localhost:3000/assets/ryan-hoffman-371ROS34quI-unsplash.jpg"
 },
 {
@@ -356,7 +357,7 @@
     "price": "125.00",
     "type": "trainer",
     "color": "white", 
-    "size ": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
     "image": "http://localhost:3000/assets/the-dk-photography-7Uwh8QXYdXQ-unsplash.jpg"
 }, 
 {
@@ -367,7 +368,7 @@
     "price": "525.00",
     "type": "trainer",
     "color": "white", 
-    "size ": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
     "image": "http://localhost:3000/assets/trendest-studio-XZ3EmAIWuz0-unsplash.jpg"
 }
 ]

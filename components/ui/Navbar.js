@@ -7,7 +7,7 @@ import {
   Stack,
   Collapse,
   Icon,
-  Link,
+  Link ,
   Popover,
   PopoverTrigger,
   PopoverContent,
@@ -16,6 +16,7 @@ import {
   useDisclosure,
   Image,
 } from "@chakra-ui/react";
+// import { Link as Links } from "next/link";
 import {
   HamburgerIcon,
   CloseIcon,
@@ -63,10 +64,13 @@ export default function WithSubnavigation() {
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
           >
-            <Image
-              src="http://localhost:3000/assets/GoldenShoeLogo.svg"
-              alt="Sushi Logo"
-            />
+        
+            <Link href="/">
+              <Image
+                src="http://localhost:3000/assets/GoldenShoeLogo.svg"
+                alt="Sushi Logo"
+              />
+            </Link >
           </Text>
           <Flex display={{ base: "none", md: "flex" }} ml={10} mt={3}>
             <DesktopNav />
@@ -266,41 +270,45 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
   {
-    label: "Inspiration",
+    label: "All Products",
+    href: "/products",
+  },
+  {
+    label: "Men",
     children: [
       {
-        label: "Explore Design Work",
-        subLabel: "Trending Design to inspire you",
+        label: "Clothes",
+        subLabel: "Finding your own style",
         href: "#",
       },
       {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
+        label: "Shoe",
+        subLabel: "Up your shoe game",
         href: "#",
       },
     ],
   },
   {
-    label: "Find Work",
+    label: "Women",
     children: [
       {
-        label: "Job Board",
-        subLabel: "Find your dream design job",
+        label: "Clothes",
+        subLabel: "Find your dream closet",
         href: "#",
       },
       {
-        label: "Freelance Projects",
-        subLabel: "An exclusive list for contract work",
+        label: "Shoe",
+        subLabel: "Up your shoe game",
         href: "#",
       },
     ],
   },
   {
-    label: "Learn Design",
+    label: "Kids",
     href: "#",
   },
   {
-    label: "Hire Designers",
+    label: "Unisex",
     href: "#",
   },
 ];
