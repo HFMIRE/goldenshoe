@@ -30,10 +30,10 @@ const Counter = (props) => {
         <Button
           p={5}
           rounded={"5px"}
-          bg={"orange.500"}
-          color={"orange.50"}
+          bg={"purple.500"}
+          color={"purple.50"}
           _hover={{
-            bg: "orange.300",
+            bg: "purple.300",
           }}
         >
           Add to cart

@@ -59,10 +59,10 @@ export default function SpanningCol() {
               </Text>
               <Stack direction={"row"}>
                 <Button
-                  bg={"blue.400"}
+                  bg={"purple.400"}
                   rounded={"full"}
                   color={"white"}
-                  _hover={{ bg: "blue.500" }}
+                  _hover={{ bg: "purple.500" }}
                 >
                   Show me more
                 </Button>

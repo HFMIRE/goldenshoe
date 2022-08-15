@@ -20,14 +20,14 @@ const HeroComp = () => {
       <Box
         width={{ lg: 'sm' }}
         transform={{ base: 'translateY(-50%)', lg: 'none' }}
-        bg={{ base: useColorModeValue('blue.50', 'gray.700'), lg: 'transparent' }}
+        bg={{ base: useColorModeValue('purple.50', 'gray.700'), lg: 'transparent' }}
         mx={{ base: '6', md: '8', lg: '0' }}
         px={{ base: '6', md: '8', lg: '0' }}
         py={{ base: '6', md: '8', lg: '12' }}
       >
         <Stack spacing={{ base: '8', lg: '10' }}>
           <Stack spacing={{ base: '2', lg: '4' }}>
-            <Heading size="xl" color={useColorModeValue('blue.500', 'blue.300')}>
+            <Heading size="xl" color={useColorModeValue('purple.500', 'purple.300')}>
              Nike
             </Heading>
             <Heading size="xl" fontWeight="normal">
@@ -35,10 +35,10 @@ const HeroComp = () => {
             </Heading>
           </Stack>
           <HStack spacing="3">
-            <Link href="/products" color={useColorModeValue('blue.500', 'blue.300')} fontWeight="bold" fontSize="lg">
+            <Link href="/products" color={useColorModeValue('purple.500', 'purple.300')} fontWeight="bold" fontSize="lg">
               Discover now
             </Link>
-            <Icon color={useColorModeValue('blue.500', 'blue.300')} as={FaArrowRight} />
+            <Icon color={useColorModeValue('purple.500', 'purple.300')} as={FaArrowRight} />
           </HStack>
         </Stack>
       </Box>

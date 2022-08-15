@@ -1,8 +1,9 @@
 import Layout from "../components/Layout";
+import {CartLayout }from "../components/CartLayout"
 const cart = () => {
   return (
     <Layout>
-      <div>cart</div>
+  <CartLayout/>
     </Layout>
   );
 };

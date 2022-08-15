@@ -19,7 +19,7 @@ export default function Product() {
       <Layout>
         <Box p={5} mb={5}>
         {product && data && (
-        <ProductPage product={product} error={error}
+        <ProductPage product={product} error={error} id={id}
         //  addToCart={addToCart}
           />
       )}

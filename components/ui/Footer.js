@@ -61,7 +61,7 @@ export default function LargeWithAppLinksAndSocial() {
           </Stack>
 
           <Stack align={"flex-start"}>
-            <ListHeader>Golden Shoe</ListHeader>
+            <ListHeader>Golden Shoes</ListHeader>
             <Link href={"#"}>About Us</Link>
             <Link href={"#"}>Sustainability</Link>
             <Link href={"#"}>News</Link>
