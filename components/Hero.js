@@ -8,8 +8,7 @@ export default function Hero() {
           <Heading
             fontWeight={600}
             fontSize={{ base: "3xl", sm: "4xl", md: "6xl" }}
-            color="purple"
-          orange.100"
+            color="purple.100"
             lineHeight={"110%"}
           >
             Want to grab a{" "}

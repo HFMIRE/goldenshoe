@@ -1,7 +1,6 @@
 import {
   Box,
   Center,
-  useColorModeValue,
   Heading,
   Text,
   Stack,
@@ -19,7 +18,7 @@ export default function Card({ product }) {
           p={6}
           maxW={"330px"}
           w={"full"}
-          bg={useColorModeValue("white", "gray.800")}
+          bg={"white"}
           boxShadow={"sm"}
           rounded={"lg"}
           pos={"relative"}
@@ -48,6 +47,7 @@ export default function Card({ product }) {
               height={340}
               width={452}
               objectFit={"cover"}
+              alt={product.name}
               src={product.image}
             />
           </Box>

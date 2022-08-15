@@ -36,17 +36,12 @@ const ProductDisplay = ({data, cartobject, id}) => {
   }
   if (cartobject.productId.length >= 4) {
     window.localStorage.setItem("cartorder", JSON.stringify(cartobject));
-    console.log("cart obj", cartobject)
     setOrder({
         ...order, 
         product: [...order.product, cartObject]
   })
-  console.log("context order", order)
 }
 
-
-
-console.log("cart obj 2", cartobject)
 
   return (
     <SimpleGrid columns={{ base: 1, md: 2 }} spacing={20}>
