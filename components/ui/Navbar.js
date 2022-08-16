@@ -7,7 +7,7 @@ import {
   Stack,
   Collapse,
   Icon,
-  Link ,
+  Link,
   Popover,
   PopoverTrigger,
   PopoverContent,
@@ -64,13 +64,12 @@ export default function WithSubnavigation() {
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
           >
-        
             <Link href="/">
               <Image
-                src="http://localhost:3000/assets/GoldenShoeLogo.svg"
+                src="https://goldenshoe.vercel.app/assets/GoldenShoeLogo.svg"
                 alt="Sushi Logo"
               />
-            </Link >
+            </Link>
           </Text>
           <Flex display={{ base: "none", md: "flex" }} ml={10} mt={3}>
             <DesktopNav />

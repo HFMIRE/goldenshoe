@@ -1,6 +1,6 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
-import  OrderContextProvider from "../contexts/orderContext";
+import OrderContextProvider from "../contexts/orderContext";
 import React from "react";
 const theme = extendTheme({
   colors: {

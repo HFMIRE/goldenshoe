@@ -35,56 +35,56 @@ const Feature = ({ title, text, icon }) => {
 export default function SpanningCol() {
   return (
     // <SimpleGrid>
-      <Box p={4}>
-        <Box
-          backgroundImage={"url(https://bit.ly/dan-abramov)"}
-          w={"300px"}
-          h={"300px"}
-          backgroundSize={"cover"}
-          backgroundPosition={"center center"}
+    <Box p={4}>
+      <Box
+        backgroundImage={"url(https://bit.ly/dan-abramov)"}
+        w={"300px"}
+        h={"300px"}
+        backgroundSize={"cover"}
+        backgroundPosition={"center center"}
+      >
+        <VStack
+          w={"full"}
+          justify={"center"}
+          px={useBreakpointValue({ base: 4, md: 8 })}
         >
-          <VStack
-            w={"full"}
-            justify={"center"}
-            px={useBreakpointValue({ base: 4, md: 8 })}
-          >
-            <Stack maxW={"2xl"} align={"flex-start"} spacing={6} p={3}>
-              <Text
+          <Stack maxW={"2xl"} align={"flex-start"} spacing={6} p={3}>
+            <Text
+              color={"white"}
+              fontWeight={700}
+              lineHeight={1.2}
+              fontSize={useBreakpointValue({ base: "xl", md: "2xl" })}
+            >
+              Men
+            </Text>
+            <Stack direction={"row"}>
+              <Button
+                bg={"purple.400"}
+                rounded={"full"}
                 color={"white"}
-                fontWeight={700}
-                lineHeight={1.2}
-                fontSize={useBreakpointValue({ base: "xl", md: "2xl" })}
+                _hover={{ bg: "purple.500" }}
               >
-                Men
-              </Text>
-              <Stack direction={"row"}>
-                <Button
-                  bg={"purple.400"}
-                  rounded={"full"}
-                  color={"white"}
-                  _hover={{ bg: "purple.500" }}
-                >
-                  Show me more
-                </Button>
-              </Stack>
+                Show me more
+              </Button>
             </Stack>
-          </VStack>
-        </Box>
-
-        <Feature
-          icon={<Icon as={FcDonate} w={10} h={10} />}
-          title={"Unlimited Donations"}
-          text={
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore..."
-          }
-        />
-        <Feature
-          icon={<Icon as={FcInTransit} w={10} h={10} />}
-          title={"Instant Delivery"}
-          text={
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore..."
-          }
-        />
+          </Stack>
+        </VStack>
       </Box>
+
+      <Feature
+        icon={<Icon as={FcDonate} w={10} h={10} />}
+        title={"Unlimited Donations"}
+        text={
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore..."
+        }
+      />
+      <Feature
+        icon={<Icon as={FcInTransit} w={10} h={10} />}
+        title={"Instant Delivery"}
+        text={
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore..."
+        }
+      />
+    </Box>
   );
 }

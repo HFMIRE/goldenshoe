@@ -1,374 +1,366 @@
 [
-{  
-    "_id":"", 
-    "name":"Chuck Taylor All Star", 
+  {
+    "_id": "",
+    "name": "Chuck Taylor All Star",
     "description": "The most iconic converse ever",
     "brand": "Converse",
     "price": "59.99",
     "category": "Unisex",
     "type": "trainer",
-    "color": "black", 
-    "size" : [3, 4, 5, 6, 7, 8, 9, 10, 11], 
+    "color": "black",
+    "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/camila-damasio-mWYhrOiAgmA-unsplash.jpg"
-
-}, 
-{
-    "name": "Black BasketBall", 
+  },
+  {
+    "name": "Black BasketBall",
     "description": "The most iconic ball ever, in collaboration with the NBA",
     "brand": "Spalding",
     "price": "30.00",
     "category": "Unisex",
     "type": "Equipment",
-    "color": "black", 
-    "size" : ["One Size"], 
+    "color": "black",
+    "size": ["One Size"],
     "image": "http://localhost:3000/assets/anastasiia-rozumna-yBYt07MdNi8-unsplash.jpg"
-
-}, 
-{
-    "name": "Panda Air Force 1", 
+  },
+  {
+    "name": "Panda Air Force 1",
     "description": "The OG AF",
     "brand": "Nike",
     "price": "120.00",
     "category": "Men",
     "type": "trainer",
-    "color": "white", 
-    "size": [3, 4, 5, 6, 7, 8, 9, 10, 11], 
+    "color": "white",
+    "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/andrew-m-aRD19xeeHaQ-unsplash.jpg"
-
-},
-{
-    "name": "Air Jordan One High", 
+  },
+  {
+    "name": "Air Jordan One High",
     "description": "The Jordan One",
     "brand": "Nike",
     "price": "150.00",
     "category": "Unisex",
     "type": "trainer",
-    "color": "pink", 
-    "size": [3, 4, 5, 6, 7, 8, 9, 10, 11], 
+    "color": "pink",
+    "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/brad-starkey-Bowrbqz1kgw-unsplash.jpg"
-},
-{
-    "name": "UltraBoost 345", 
+  },
+  {
+    "name": "UltraBoost 345",
     "description": "Providng the biggest boost in life",
     "brand": "Adidas",
     "price": "135.00",
     "category": "Women",
     "type": "trainer",
-    "color": "blue", 
-    "size": [ 5, 6, 7, 8, 9, 10, 11], 
+    "color": "blue",
+    "size": [5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/cj-dayrit-2reXfzCi0Kg-unsplash.jpg"
-
-}, 
-{
-    "name": "YaHweH T-Shirt", 
+  },
+  {
+    "name": "YaHweH T-Shirt",
     "description": "The ultimate black shirt",
     "brand": "Yireh",
     "category": "Men",
     "price": "35.00",
     "type": "Clothes",
-    "color": "black", 
-    "size": ["s","m", "l", "xl", "xxl"], 
+    "color": "black",
+    "size": ["s", "m", "l", "xl", "xxl"],
     "image": "http://localhost:3000/assets/cj-dayrit-2reXfzCi0Kg-unsplash.jpg"
-
-}, 
-{
-    "name": "Every Dad shoe", 
+  },
+  {
+    "name": "Every Dad shoe",
     "description": "The ultimate Dad shoe",
     "brand": "Daddy Inc",
     "category": "Unisex",
     "price": "135.00",
     "type": "trainer",
-    "color": "grey", 
-    "size": [ 5, 6, 7, 8, 9, 10, 11], 
+    "color": "grey",
+    "size": [5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/filip-baotic-RbRSCEEhmiw-unsplash.jpg"
-
-}, 
-{
-    "name": "Pastel High Tops Dunks", 
+  },
+  {
+    "name": "Pastel High Tops Dunks",
     "description": "Pastel Dunks giving all the muted color of rainbow",
     "brand": "Nike",
     "category": "Unisex",
     "price": "165.00",
     "type": "trainer",
-    "color": "multi", 
-    "size": [ 5, 6, 7, 8, 9, 10, 11], 
+    "color": "multi",
+    "size": [5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/hemesh-patil-Kv1GtuqBVIY-unsplash.jpg"
-
-}, 
-{
-    "name": "Zoom 56", 
+  },
+  {
+    "name": "Zoom 56",
     "description": "Giving wings to fly",
     "brand": "Nike",
     "category": "Unisex",
     "price": "195.00",
     "type": "trainer",
-    "color": "black", 
-    "size": [ 5, 6, 7, 8, 9, 10, 11], 
+    "color": "black",
+    "size": [5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/hemesh-patil-Kv1GtuqBVIY-unsplash.jpg"
-
-},
-{
-    "name": "Colourful Huarache", 
+  },
+  {
+    "name": "Colourful Huarache",
     "description": "A dream of colour",
     "brand": "Nike",
     "category": "Unisex",
     "price": "150.00",
     "type": "trainer",
-    "color": "multi", 
-    "size": [ 5, 6, 7, 8, 9, 10, 11], 
+    "color": "multi",
+    "size": [5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/irene-kredenets-dwKiHoqqxk8-unsplash.jpg"
-
-}, 
-{
-    "name": "300 Court", 
+  },
+  {
+    "name": "300 Court",
     "description": "Every Day shoe",
     "brand": "New Balance",
     "category": "Unisex",
     "price": "75.00",
     "type": "trainer",
-    "color": "white", 
-    "size": [ 5, 6, 7, 8, 9, 10, 11], 
+    "color": "white",
+    "size": [5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/jay-wennington-4aSf1J_vjA4-unsplash.jpg"
-
-}, 
-{
-    "name": "SB Dunks", 
+  },
+  {
+    "name": "SB Dunks",
     "description": "Orange is the new black",
     "brand": "Nike",
     "category": "Unisex",
     "price": "115.00",
     "type": "trainer",
-    "color": "orange", 
-    "size": [ 5, 6, 7, 8, 9, 10, 11], 
+    "color": "orange",
+    "size": [5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/maksim-larin-1vy2QcZd5FU-unsplash.jpg"
-
-}, {
-    "name": "Basic Hat", 
+  },
+  {
+    "name": "Basic Hat",
     "description": "Basically a hat",
     "brand": "Basic",
     "category": "Unisex",
     "price": "15.00",
     "type": "Clothes",
-    "color": "white", 
-    "size": ["One Size"], 
+    "color": "white",
+    "size": ["One Size"],
     "image": "http://localhost:3000/assets/mediamodifier-t8HiP3e5abg-unsplash.jpg"
-},
-{
-    "name": "Basic Hat", 
+  },
+  {
+    "name": "Basic Hat",
     "description": "Basically a hat",
     "brand": "Basic",
     "category": "Unisex",
     "price": "15.00",
     "type": "Clothes",
-    "color": "grey", 
-    "size": ["One Size"], 
+    "color": "grey",
+    "size": ["One Size"],
     "image": "http://localhost:3000/assets/yang-deng-2loKxdi6Hmo-unsplash.jpg"
-}, 
-{
-    "name": "Stan Smith", 
+  },
+  {
+    "name": "Stan Smith",
     "description": "Basic and essential: the stan smith",
     "brand": "Adidas",
     "category": "Unisex",
     "price": "75.00",
     "type": "trainer",
-    "color": "white", 
-    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "color": "white",
+    "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/mnz-BeClz11lyXY-unsplash.jpg"
-}, 
-{
-    "name": "Chuck 70", 
+  },
+  {
+    "name": "Chuck 70",
     "description": "Basic and popular",
     "brand": "Comme des garcons Converse",
     "category": "Unisex",
     "price": "275.00",
     "type": "trainer",
-    "color": "white", 
-    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "color": "white",
+    "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/mnz-g3C5qZhNzQg-unsplash.jpg"
-}, 
-{
-    "name": "Boost 356", 
+  },
+  {
+    "name": "Boost 356",
     "description": "Skipping through the street",
     "brand": "Adidas",
     "category": "Unisex",
     "price": "175.00",
     "type": "trainer",
-    "color": "white", 
-    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "color": "white",
+    "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/mnz-lCg-GLhluDU-unsplash.jpg"
-}, 
-{
-    "name": "Slip on vans", 
+  },
+  {
+    "name": "Slip on vans",
     "description": "slip in on your way to your errands ",
     "brand": "Vans",
     "category": "Unisex",
     "price": "105.00",
     "type": "trainer",
-    "color": "blue", 
-    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "color": "blue",
+    "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/mnz-mCRFMMRoNJE-unsplash.jpg"
-}, 
-{
-    "name": "Bowling 43", 
+  },
+  {
+    "name": "Bowling 43",
     "description": "Bowling shoes",
     "brand": "S.W.C",
     "category": "Unisex",
     "price": "95.00",
     "type": "trainer",
-    "color": "grey", 
-    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "color": "grey",
+    "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/mnz-MdsbS4UGZqg-unsplash.jpg"
-}, {
-    "name": "Orignal 345", 
+  },
+  {
+    "name": "Orignal 345",
     "description": "Icons",
     "brand": "Adidas",
     "category": "Men",
     "price": "95.00",
     "type": "trainer",
-    "color": "grey", 
-    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "color": "grey",
+    "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/mnz-Srj5F1y7p0k-unsplash.jpg"
-}, {
-    "name": "Air Jordan Two High", 
+  },
+  {
+    "name": "Air Jordan Two High",
     "description": "The Jordan Two",
     "brand": "Nike",
     "category": "Men",
     "price": "195.00",
     "type": "trainer",
-    "color": "grey", 
-    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "color": "grey",
+    "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/mnz-v13tnV6D9lw-unsplash.jpg"
-}, 
-{
-    "name": "Old skool", 
+  },
+  {
+    "name": "Old skool",
     "description": "The old skool: classic",
     "brand": "Vans",
     "category": "Men",
     "price": "115.00",
     "type": "trainer",
-    "color": "orange", 
-    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "color": "orange",
+    "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/mutzii-fmDCrqPQKog-unsplash.jpg"
-}, 
-{
-    "name": "Old skool", 
+  },
+  {
+    "name": "Old skool",
     "description": "The old skool: classic",
     "brand": "Vans",
     "category": "Men",
     "price": "115.00",
     "type": "trainer",
-    "color": "red", 
-    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "color": "red",
+    "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/paul-gaudriault-a-QH9MAAVNI-unsplash.jpg"
-}, 
-{
-    "name": "Definer 354", 
+  },
+  {
+    "name": "Definer 354",
     "description": "A twist on the classic",
     "brand": "K Swiss",
     "category": "Men",
     "price": "115.00",
     "type": "trainer",
-    "color": "multi", 
-    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "color": "multi",
+    "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/omar-prestwich-jLEGurepDco-unsplash.jpg"
-}, 
-{
-    "name": "FlyKnit", 
+  },
+  {
+    "name": "FlyKnit",
     "description": "Light, Breathable and comfort",
     "brand": "Nike",
     "category": "Men",
     "price": "295.00",
     "type": "trainer",
-    "color": "red", 
-    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "color": "red",
+    "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/revolt-164_6wVEHfI-unsplash.jpg"
-}, 
-{
-    "name": "Black 705", 
+  },
+  {
+    "name": "Black 705",
     "description": "Logo shirt",
     "brand": "750",
     "category": "Unisex",
     "price": "35.00",
     "type": "Clothes",
-    "color": "black", 
-    "size": ["s","m", "l", "xl", "xxl"], 
+    "color": "black",
+    "size": ["s", "m", "l", "xl", "xxl"],
     "image": "http://localhost:3000/assets/ryan-hoffman-6Nub980bI3I-unsplash.jpg"
-}, 
-{
-    "name": "California 705", 
+  },
+  {
+    "name": "California 705",
     "description": "California Crewneck",
     "brand": "750",
     "category": "Unisex",
     "price": "35.00",
     "type": "Clothes",
-    "color": "black", 
-    "size": ["s","m", "l", "xl", "xxl"], 
+    "color": "black",
+    "size": ["s", "m", "l", "xl", "xxl"],
     "image": "http://localhost:3000/assets/ryan-hoffman-982Nb-awyVE-unsplash.jpg"
-}, 
-{
-    "name": "Classic 705", 
+  },
+  {
+    "name": "Classic 705",
     "description": "classic Crewneck",
     "brand": "750",
     "category": "Unisex",
     "price": "35.00",
     "type": "Clothes",
-    "color": "black", 
-    "size": ["s","m", "l", "xl", "xxl"], 
+    "color": "black",
+    "size": ["s", "m", "l", "xl", "xxl"],
     "image": "http://localhost:3000/assets/ryan-hoffman-A7f7XRKgUWc-unsplash.jpg"
-}, 
-{
-    "name": "Pack of 705", 
+  },
+  {
+    "name": "Pack of 705",
     "description": "3 classic Crewneck",
     "brand": "750",
     "category": "Unisex",
     "price": "35.00",
     "type": "Clothes",
-    "color": "black", 
-    "size": ["s","m", "l", "xl", "xxl"], 
+    "color": "black",
+    "size": ["s", "m", "l", "xl", "xxl"],
     "image": "http://localhost:3000/assets/ryan-hoffman-Cs4GVbMqKGY-unsplash.jpg"
-}, 
-{
-    "name": "705 Shirt", 
+  },
+  {
+    "name": "705 Shirt",
     "description": "classic shirt",
     "brand": "750",
     "category": "Unisex",
     "price": "35.00",
     "type": "Clothes",
-    "color": "black", 
-    "size": ["s","m", "l", "xl", "xxl"], 
+    "color": "black",
+    "size": ["s", "m", "l", "xl", "xxl"],
     "image": "http://localhost:3000/assets/ryan-hoffman-u6n1HrW0sdQ-unsplash.jpg"
-}, 
-{
-    "name": "705 waterBottle", 
+  },
+  {
+    "name": "705 waterBottle",
     "description": "The waterBottle",
     "brand": "750",
     "category": "Unisex",
     "price": "25.00",
     "type": "Equipment",
-    "color": "black", 
-    "size": ["One Size"], 
+    "color": "black",
+    "size": ["One Size"],
     "image": "http://localhost:3000/assets/ryan-hoffman-371ROS34quI-unsplash.jpg"
-},
-{
-    "name": "Smash V2", 
+  },
+  {
+    "name": "Smash V2",
     "description": "The smash v2",
     "brand": "Puma",
     "category": "Unisex",
     "price": "125.00",
     "type": "trainer",
-    "color": "white", 
-    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "color": "white",
+    "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/the-dk-photography-7Uwh8QXYdXQ-unsplash.jpg"
-}, 
-{
-    "name": "Mongram ", 
+  },
+  {
+    "name": "Mongram ",
     "description": "The swag",
     "brand": "Louis Vuitton",
     "category": "Unisex",
     "price": "525.00",
     "type": "trainer",
-    "color": "white", 
-    "size": [3, 4,  5, 6, 7, 8, 9, 10, 11],  
+    "color": "white",
+    "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/trendest-studio-XZ3EmAIWuz0-unsplash.jpg"
-}
+  }
 ]

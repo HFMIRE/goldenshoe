@@ -52,7 +52,7 @@ const AccordionComp = () => {
           </AccordionButton>
         </h2>
         <AccordionPanel pb={4}>
-          <Text >
+          <Text>
             {" "}
             Golden Shoes Free standard delivery and Click & Collect on orders
             over £20 for Members.
@@ -62,7 +62,10 @@ const AccordionComp = () => {
             You can also use our Click & Collect service (free for all members /
             non- members free over £20).{" "}
           </Text>
-          <Text p={0.5}> We accept card payments via MasterCard and Visa. </Text>
+          <Text p={0.5}>
+            {" "}
+            We accept card payments via MasterCard and Visa.{" "}
+          </Text>
           <Text p={0.5}>
             You can also pay by Klarna, PayPal, Apple Pay or use your G&S
             giftcard. Find out more on our customer service pages.

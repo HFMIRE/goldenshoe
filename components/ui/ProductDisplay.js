@@ -10,53 +10,60 @@ import {
   BreadcrumbItem,
   BreadcrumbLink,
   Select,
+  Input,
   Box,
-Icon
+  Icon,
+  HStack,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import AccordionComp from "./AccordionComp";
+import { createCheckOutSession } from "../../libs/payment";
 import { useContext } from "react";
 import { OrderContext } from "../../contexts/orderContext";
 const CircleIcon = (props) => (
-    <Icon viewBox="0 0 200 200" {...props}>
-      <path
-        fill="currentColor"
-        d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"
-      />
-    </Icon>
-  );
-const ProductDisplay = ({data, cartobject, id}) => {
+  <Icon viewBox="0 0 200 200" {...props}>
+    <path
+      fill="currentColor"
+      d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"
+    />
+  </Icon>
+);
+const ProductDisplay = ({ data, cartobject, id }) => {
   const [size, setSize] = useState();
-  const [order, setOrder] = useContext(OrderContext)
-  function submitProduct() {
-    cartobject.productId = id;
-    cartobject.quantity = 1;
-    cartobject.size = size;
-    return cartobject;
-  }
-  if (cartobject.productId.length >= 4) {
-    window.localStorage.setItem("cartorder", JSON.stringify(cartobject));
-    setOrder({
-        ...order, 
-        product: [...order.product, cartObject]
-  })
-}
+  const [order, setOrder] = useContext(OrderContext);
+  const [item, setItem] = useState({
+    name: data.name,
+    description: data.description,
+    image: data.image,
+    quantity: 0,
+    price: parseInt(data.price.$numberDecimal),
+  });
+  const changeQuantity = (value) => {
+    // Don't allow the quantity less than 0, if the quantity is greater than value entered by user then the user entered quantity is used, else 0
+    setItem({ ...item, quantity: Math.max(0, value) });
+  };
 
+  const onInputChange = (e) => {
+    changeQuantity(parseInt(e.target.value));
+  };
 
+  const onQuantityPlus = () => {
+    changeQuantity(item.quantity + 1);
+  };
+
+  const onQuantityMinus = () => {
+    changeQuantity(item.quantity - 1);
+  };
+  console.log("qty", item.quantity);
   return (
     <SimpleGrid columns={{ base: 1, md: 2 }} spacing={20}>
       <Flex>
-        <Image
-          rounded={"md"}
-          alt={data.name}
-          src={data.image}
-          objectFit={""}
-        />
+        <Image rounded={"md"} alt={data.name} src={data.image} objectFit={""} />
       </Flex>
       <Stack spacing={4}>
         <Breadcrumb>
           <BreadcrumbItem>
-            <BreadcrumbLink href="#">Products</BreadcrumbLink>
+            <BreadcrumbLink href="/products">Products</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem isCurrentPage>
             <BreadcrumbLink href="#">{data.name}</BreadcrumbLink>
@@ -65,6 +72,9 @@ const ProductDisplay = ({data, cartobject, id}) => {
         <Heading>{data.name}</Heading>
         <Text color={"gray.500"} fontSize={"lg"}>
           {data.description}
+        </Text>
+        <Text color={"purple.500"} fontSize={"lg"} fontWeight={500}>
+          £{data.price.$numberDecimal}
         </Text>
         {data.color === "multi" ? (
           <Box
@@ -100,7 +110,34 @@ const ProductDisplay = ({data, cartobject, id}) => {
               );
             })}
         </Select>
-        <Button colorScheme="purple" p={3} onClick={submitProduct}>
+        <Stack
+          direction={["column", "row"]}
+          spacing="16px"
+          justifyContent={"center"}
+          p={3}
+          alignItems={"baseline"}
+        >
+          <Button colorScheme="purple" size="sm" onClick={onQuantityMinus}>
+            -
+          </Button>
+          <Input
+            placeholder="quantity"
+            htmlSize={3}
+            width="auto"
+            onChange={onInputChange}
+            value={item.quantity}
+          />
+          <Button colorScheme="purple" size="sm" onClick={onQuantityPlus}>
+            +
+          </Button>
+        </Stack>
+        <Button
+          colorScheme="purple"
+          p={3}
+          // {...item.quantity === 0 ? isDisabled: null }
+
+          onClick={() => createCheckOutSession(item)}
+        >
           Add to cart
         </Button>
         <AccordionComp />

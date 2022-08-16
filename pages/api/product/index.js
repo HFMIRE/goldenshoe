@@ -20,11 +20,11 @@ const ProductApi = async (req, res) => {
       try {
         // add new product
         const newproducts = await Product.create(req.body);
-        console.log("created a product");
+        //  console.log("created a product");
         res.status(200).json({ success: true });
       } catch (err) {
         res.status(400).json({ success: false });
       }
   }
 };
-export default ProductApi; 
+export default ProductApi;

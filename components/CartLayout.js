@@ -14,7 +14,7 @@ import { useContext } from "react";
 //   import { cartData } from './_data'
 
 export const CartLayout = () => {
-    const [order, setOrder] = useContext()
+  const [order, setOrder] = useContext();
   return (
     <Box
       maxW={{ base: "3xl", lg: "7xl" }}
@@ -43,7 +43,9 @@ export const CartLayout = () => {
           <CartOrderSummary />
           <HStack mt="6" fontWeight="semibold">
             <p>or</p>
-            <Link color={mode("purple.500", "purple.200")}>Continue shopping</Link>
+            <Link color={mode("purple.500", "purple.200")}>
+              Continue shopping
+            </Link>
           </HStack>
         </Flex>
       </Stack>

@@ -3,7 +3,6 @@ import { Box, SimpleGrid } from "@chakra-ui/react";
 import Card from "../components/ui/Card";
 
 const ProductList = ({ product }) => {
-    console.log('id', product)
   return (
     <Box>
       <SimpleGrid

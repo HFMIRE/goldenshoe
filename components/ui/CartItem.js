@@ -1,15 +1,21 @@
-import { CloseButton, Flex, Link, Select, SelectProps, useColorModeValue } from '@chakra-ui/react'
-import * as React from 'react'
-import { PriceTag } from './PriceTag'
-import { CartProductMeta } from './CartProductMeta'
-
+import {
+  CloseButton,
+  Flex,
+  Link,
+  Select,
+  SelectProps,
+  useColorModeValue,
+} from "@chakra-ui/react";
+import * as React from "react";
+import { PriceTag } from "./PriceTag";
+import { CartProductMeta } from "./CartProductMeta";
 
 const QuantitySelect = (props) => {
   return (
     <Select
       maxW="64px"
       aria-label="Select quantity"
-      focusBorderColor={useColorModeValue('purple.500', 'purple.200')}
+      focusBorderColor={useColorModeValue("purple.500", "purple.200")}
       {...props}
     >
       <option value="1">1</option>
@@ -17,8 +23,8 @@ const QuantitySelect = (props) => {
       <option value="3">3</option>
       <option value="4">4</option>
     </Select>
-  )
-}
+  );
+};
 
 export const CartItem = (props) => {
   const {
@@ -31,10 +37,14 @@ export const CartItem = (props) => {
     price,
     onChangeQuantity,
     onClickDelete,
-  } = props
+  } = props;
 
   return (
-    <Flex direction={{ base: 'column', md: 'row' }} justify="space-between" align="center">
+    <Flex
+      direction={{ base: "column", md: "row" }}
+      justify="space-between"
+      align="center"
+    >
       <CartProductMeta
         name={name}
         description={description}
@@ -43,15 +53,22 @@ export const CartItem = (props) => {
       />
 
       {/* Desktop */}
-      <Flex width="full" justify="space-between" display={{ base: 'none', md: 'flex' }}>
+      <Flex
+        width="full"
+        justify="space-between"
+        display={{ base: "none", md: "flex" }}
+      >
         <QuantitySelect
           value={quantity}
           onChange={(e) => {
-            onChangeQuantity?.(+e.currentTarget.value)
+            onChangeQuantity?.(+e.currentTarget.value);
           }}
         />
         <PriceTag price={price} currency={currency} />
-        <CloseButton aria-label={`Delete ${name} from cart`} onClick={onClickDelete} />
+        <CloseButton
+          aria-label={`Delete ${name} from cart`}
+          onClick={onClickDelete}
+        />
       </Flex>
 
       {/* Mobile */}
@@ -60,7 +77,7 @@ export const CartItem = (props) => {
         align="center"
         width="full"
         justify="space-between"
-        display={{ base: 'flex', md: 'none' }}
+        display={{ base: "flex", md: "none" }}
       >
         <Link fontSize="sm" textDecor="underline">
           Delete
@@ -68,11 +85,11 @@ export const CartItem = (props) => {
         <QuantitySelect
           value={quantity}
           onChange={(e) => {
-            onChangeQuantity?.(+e.currentTarget.value)
+            onChangeQuantity?.(+e.currentTarget.value);
           }}
         />
         <PriceTag price={price} currency={currency} />
       </Flex>
     </Flex>
-  )
-}
+  );
+};

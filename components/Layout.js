@@ -4,7 +4,7 @@ import NavBar from "../components/ui/Navbar";
 import Footer from "../components/ui/Footer";
 const Layout = ({ children }) => {
   return (
-    <Box >
+    <Box>
       <NavBar />
       {children}
       <Footer />

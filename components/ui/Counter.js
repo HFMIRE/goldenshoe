@@ -3,12 +3,12 @@ import { AddIcon, MinusIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 const Counter = (props) => {
   const [count, setCount] = useState(0);
-  console.log(props);
+
   const obj = {
     productId: "hey",
     qty: count,
   };
-  console.log(obj);
+
   return (
     <Box alignProducts={"baseline"}>
       <Stack direction={{ base: "column", md: "row" }} spacing={4} p={3}>

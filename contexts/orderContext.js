@@ -11,7 +11,7 @@ const OrderContextProvider = (props) => {
           {
             productId: order.productId,
             quantity: order.quantity,
-            size: order.size, 
+            size: order.size,
           },
         ],
         orderTotal: order.orderTotal,

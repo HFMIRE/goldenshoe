@@ -1,24 +1,28 @@
 import Layout from "../components/Layout";
-import { server } from "../config";
 import ProductList from "../components/ProductList";
 import AlertMsg from "../components/ui/AlertMsg";
-const allProducts = ({ products }) => {
-  if (!products.success) {
+import fetcher from "../libs/fetcher";
+import useSWR from "swr";
+
+const URL = "https://goldenshoe.vercel.app/api/product";
+const AllProducts = ({ fallbackData }) => {
+  const { data, error } = useSWR(URL, fetcher, { fallbackData });
+
+  if (error) {
     <AlertMsg />;
+  }
+  if (!data) {
+    <div>Loading....</div>;
   }
   return (
     <Layout>
-      <ProductList product={products.data} />
+      <ProductList product={data.data} />
     </Layout>
   );
 };
-export default allProducts;
-export async function getStaticProps() {
-  const res = await fetch(`${server}/api/product`);
-  const products = await res.json();
-  return {
-    props: {
-      products,
-    },
-  };
+export default AllProducts;
+
+export async function getServerSideProps() {
+  const data = await fetcher(URL);
+  return { props: { fallbackData: data } };
 }

@@ -49,7 +49,7 @@ export default function Hero() {
           alt={"product Image"}
           objectFit={"cover"}
           src={
-            "http://localhost:3000/assets/tamas-pap-68Vb4Mj-L9c-unsplash-removebg-preview.png"
+            "https://goldenshoe.vercel.app/assets/tamas-pap-68Vb4Mj-L9c-unsplash-removebg-preview.png"
           }
         />
       </Flex>
