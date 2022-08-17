@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   env: {
-    publishableKey: `${process.env.NEXT_PUBLIC_STRIPE_API_KEY}`,
+    publishableKey: `${process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY}`,
     MONGO_URL:
       "mongodb+srv://HFMIRE:3TBHcn2rD4pfHdOg@cluster0.qbn3u.mongodb.net/?retryWrites=true&w=majority",
   },

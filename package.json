@@ -10,7 +10,8 @@
     "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
   },
   "dependencies": {
-    "@chakra-ui/icons": "^2.0.2",
+    "@auth0/nextjs-auth0": "^1.9.1",
+    "@chakra-ui/icons": "^2.0.8",
     "@chakra-ui/react": "^2.2.1",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",

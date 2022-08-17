@@ -1,6 +1,7 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
 import OrderContextProvider from "../contexts/orderContext";
+import { UserProvider } from "@auth0/nextjs-auth0";
 import React from "react";
 const theme = extendTheme({
   colors: {
@@ -16,9 +17,11 @@ export default function App({ Component, pageProps }) {
   if (!process.browser) React.useLayoutEffect = React.useEffect;
   return (
     <ChakraProvider theme={theme}>
-      <OrderContextProvider>
-        <Component {...pageProps} />
-      </OrderContextProvider>
+      <UserProvider>
+        <OrderContextProvider>
+          <Component {...pageProps} />
+        </OrderContextProvider>
+      </UserProvider>
     </ChakraProvider>
   );
 }

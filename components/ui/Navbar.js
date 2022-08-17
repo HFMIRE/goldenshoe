@@ -16,13 +16,15 @@ import {
   useDisclosure,
   Image,
 } from "@chakra-ui/react";
-// import { Link as Links } from "next/link";
+import NextLink from "next/link";
 import {
   HamburgerIcon,
   CloseIcon,
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
+import UserMenu from "./UserMenu";
+import { LoginComponent } from "./LoginComponent";
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
@@ -82,28 +84,7 @@ export default function WithSubnavigation() {
           direction={"row"}
           spacing={6}
         >
-          <Button
-            as={"a"}
-            fontSize={"sm"}
-            fontWeight={400}
-            variant={"link"}
-            href={"#"}
-          >
-            Sign In
-          </Button>
-          <Button
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg={"purple.400"}
-            href={"#"}
-            _hover={{
-              bg: "purple.300",
-            }}
-          >
-            Sign Up
-          </Button>
+          <LoginComponent />
         </Stack>
       </Flex>
 
