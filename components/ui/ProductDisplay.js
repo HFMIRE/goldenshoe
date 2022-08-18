@@ -17,9 +17,10 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import AccordionComp from "./AccordionComp";
-import { createCheckOutSession } from "../../libs/payment";
+import { initiateCheckout } from "../../libs/payment";
 import { useContext } from "react";
 import { OrderContext } from "../../contexts/orderContext";
+
 const CircleIcon = (props) => (
   <Icon viewBox="0 0 200 200" {...props}>
     <path
@@ -54,7 +55,7 @@ const ProductDisplay = ({ data, cartobject, id }) => {
   const onQuantityMinus = () => {
     changeQuantity(item.quantity - 1);
   };
-  console.log("qty", item.quantity);
+  console.log("stripe id", data.stripeId);
   return (
     <SimpleGrid columns={{ base: 1, md: 2 }} spacing={20}>
       <Flex>
@@ -136,7 +137,16 @@ const ProductDisplay = ({ data, cartobject, id }) => {
           p={3}
           // {...item.quantity === 0 ? isDisabled: null }
 
-          onClick={() => createCheckOutSession(item)}
+          onClick={() =>
+            initiateCheckout({
+              lineItems: [
+                {
+                  price: data.stripeId,
+                  quantity: 1,
+                },
+              ],
+            })
+          }
         >
           Add to cart
         </Button>

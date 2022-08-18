@@ -9,7 +9,8 @@
     "type": "trainer",
     "color": "black",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/camila-damasio-mWYhrOiAgmA-unsplash.jpg"
+    "image": "http://localhost:3000/assets/camila-damasio-mWYhrOiAgmA-unsplash.jpg",
+    "stripeId": "price_1LY697CZ5p8wpYXZ4lc21wpQ"
   },
   {
     "name": "Black BasketBall",
@@ -20,7 +21,8 @@
     "type": "Equipment",
     "color": "black",
     "size": ["One Size"],
-    "image": "http://localhost:3000/assets/anastasiia-rozumna-yBYt07MdNi8-unsplash.jpg"
+    "image": "http://localhost:3000/assets/anastasiia-rozumna-yBYt07MdNi8-unsplash.jpg",
+    "stripeId": "price_1LY69zCZ5p8wpYXZ2vMu3j8f"
   },
   {
     "name": "Panda Air Force 1",
@@ -31,7 +33,8 @@
     "type": "trainer",
     "color": "white",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/andrew-m-aRD19xeeHaQ-unsplash.jpg"
+    "image": "http://localhost:3000/assets/andrew-m-aRD19xeeHaQ-unsplash.jpg",
+    "stripeId": "price_1LY6AfCZ5p8wpYXZ7JN8ZWa5"
   },
   {
     "name": "Air Jordan One High",
@@ -42,7 +45,8 @@
     "type": "trainer",
     "color": "pink",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/brad-starkey-Bowrbqz1kgw-unsplash.jpg"
+    "image": "http://localhost:3000/assets/brad-starkey-Bowrbqz1kgw-unsplash.jpg",
+    "stripeId": "price_1LY6BKCZ5p8wpYXZANHDRLRA"
   },
   {
     "name": "UltraBoost 345",
@@ -53,7 +57,8 @@
     "type": "trainer",
     "color": "blue",
     "size": [5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/cj-dayrit-2reXfzCi0Kg-unsplash.jpg"
+    "image": "http://localhost:3000/assets/cj-dayrit-2reXfzCi0Kg-unsplash.jpg",
+    "stripeId": "price_1LY6C1CZ5p8wpYXZgE2yFedO"
   },
   {
     "name": "YaHweH T-Shirt",
@@ -64,7 +69,8 @@
     "type": "Clothes",
     "color": "black",
     "size": ["s", "m", "l", "xl", "xxl"],
-    "image": "http://localhost:3000/assets/cj-dayrit-2reXfzCi0Kg-unsplash.jpg"
+    "image": "http://localhost:3000/assets/cj-dayrit-2reXfzCi0Kg-unsplash.jpg",
+    "stripeId": "price_1LY6CVCZ5p8wpYXZhYmuNPgl"
   },
   {
     "name": "Every Dad shoe",
@@ -75,18 +81,20 @@
     "type": "trainer",
     "color": "grey",
     "size": [5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/filip-baotic-RbRSCEEhmiw-unsplash.jpg"
+    "image": "http://localhost:3000/assets/filip-baotic-RbRSCEEhmiw-unsplash.jpg",
+    "stripeId": "price_1LY6DCCZ5p8wpYXZNnVG6kIY"
   },
   {
     "name": "Pastel High Tops Dunks",
-    "description": "Pastel Dunks giving all the muted color of rainbow",
+    "description": "Pastel Dunks giving all the muted colour of the rainbow",
     "brand": "Nike",
     "category": "Unisex",
     "price": "165.00",
     "type": "trainer",
     "color": "multi",
     "size": [5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/hemesh-patil-Kv1GtuqBVIY-unsplash.jpg"
+    "image": "http://localhost:3000/assets/hemesh-patil-Kv1GtuqBVIY-unsplash.jpg",
+    "stripeId": "price_1LY6E0CZ5p8wpYXZX3kM4Vrh"
   },
   {
     "name": "Zoom 56",
@@ -97,7 +105,8 @@
     "type": "trainer",
     "color": "black",
     "size": [5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/hemesh-patil-Kv1GtuqBVIY-unsplash.jpg"
+    "image": "http://localhost:3000/assets/imani-bahati-LxVxPA1LOVM-unsplash.jpg",
+    "stripeId": "price_1LY6RZCZ5p8wpYXZjVdECBMK"
   },
   {
     "name": "Colourful Huarache",
@@ -108,7 +117,8 @@
     "type": "trainer",
     "color": "multi",
     "size": [5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/irene-kredenets-dwKiHoqqxk8-unsplash.jpg"
+    "image": "http://localhost:3000/assets/irene-kredenets-dwKiHoqqxk8-unsplash.jpg",
+    "stripeId": "price_1LY6S5CZ5p8wpYXZLhKNXM2p"
   },
   {
     "name": "300 Court",
@@ -119,7 +129,8 @@
     "type": "trainer",
     "color": "white",
     "size": [5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/jay-wennington-4aSf1J_vjA4-unsplash.jpg"
+    "image": "http://localhost:3000/assets/jay-wennington-4aSf1J_vjA4-unsplash.jpg",
+    "stripeId": "price_1LY6SfCZ5p8wpYXZo24LTn7H"
   },
   {
     "name": "SB Dunks",
@@ -130,7 +141,8 @@
     "type": "trainer",
     "color": "orange",
     "size": [5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/maksim-larin-1vy2QcZd5FU-unsplash.jpg"
+    "image": "http://localhost:3000/assets/maksim-larin-1vy2QcZd5FU-unsplash.jpg",
+    "stripeId": "price_1LY6T3CZ5p8wpYXZEf7kv8f6"
   },
   {
     "name": "Basic Hat",
@@ -141,7 +153,9 @@
     "type": "Clothes",
     "color": "white",
     "size": ["One Size"],
-    "image": "http://localhost:3000/assets/mediamodifier-t8HiP3e5abg-unsplash.jpg"
+    "image": "http://localhost:3000/assets/mediamodifier-t8HiP3e5abg-unsplash.jpg",
+    "stripeId": "price_1LY6TWCZ5p8wpYXZnEKLn9we"
+    
   },
   {
     "name": "Basic Hat",
@@ -152,7 +166,8 @@
     "type": "Clothes",
     "color": "grey",
     "size": ["One Size"],
-    "image": "http://localhost:3000/assets/yang-deng-2loKxdi6Hmo-unsplash.jpg"
+    "image": "http://localhost:3000/assets/yang-deng-2loKxdi6Hmo-unsplash.jpg",
+    "stripeId": "price_1LY6TWCZ5p8wpYXZnEKLn9we"
   },
   {
     "name": "Stan Smith",
@@ -163,7 +178,8 @@
     "type": "trainer",
     "color": "white",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/mnz-BeClz11lyXY-unsplash.jpg"
+    "image": "http://localhost:3000/assets/mnz-BeClz11lyXY-unsplash.jpg",
+    "stripeId": "price_1LY6U3CZ5p8wpYXZ2UqhSH45"
   },
   {
     "name": "Chuck 70",
@@ -174,7 +190,8 @@
     "type": "trainer",
     "color": "white",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/mnz-g3C5qZhNzQg-unsplash.jpg"
+    "image": "http://localhost:3000/assets/mnz-g3C5qZhNzQg-unsplash.jpg",
+    "stripeId": "price_1LY6VTCZ5p8wpYXZnePRPiZR"
   },
   {
     "name": "Boost 356",
@@ -185,7 +202,8 @@
     "type": "trainer",
     "color": "white",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/mnz-lCg-GLhluDU-unsplash.jpg"
+    "image": "http://localhost:3000/assets/mnz-lCg-GLhluDU-unsplash.jpg",
+    "stripeId": "price_1LY6W6CZ5p8wpYXZQiymD8Tl"
   },
   {
     "name": "Slip on vans",
@@ -196,7 +214,8 @@
     "type": "trainer",
     "color": "blue",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/mnz-mCRFMMRoNJE-unsplash.jpg"
+    "image": "http://localhost:3000/assets/mnz-mCRFMMRoNJE-unsplash.jpg",
+    "stripeId": ""
   },
   {
     "name": "Bowling 43",
@@ -207,7 +226,8 @@
     "type": "trainer",
     "color": "grey",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/mnz-MdsbS4UGZqg-unsplash.jpg"
+    "image": "http://localhost:3000/assets/mnz-MdsbS4UGZqg-unsplash.jpg",
+    "stripeId": ""
   },
   {
     "name": "Orignal 345",
@@ -218,7 +238,8 @@
     "type": "trainer",
     "color": "grey",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/mnz-Srj5F1y7p0k-unsplash.jpg"
+    "image": "http://localhost:3000/assets/mnz-Srj5F1y7p0k-unsplash.jpg",
+    "stripeId": ""
   },
   {
     "name": "Air Jordan Two High",
@@ -229,7 +250,8 @@
     "type": "trainer",
     "color": "grey",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/mnz-v13tnV6D9lw-unsplash.jpg"
+    "image": "http://localhost:3000/assets/mnz-v13tnV6D9lw-unsplash.jpg",
+    "stripeId": ""
   },
   {
     "name": "Old skool",
@@ -240,7 +262,8 @@
     "type": "trainer",
     "color": "orange",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/mutzii-fmDCrqPQKog-unsplash.jpg"
+    "image": "http://localhost:3000/assets/mutzii-fmDCrqPQKog-unsplash.jpg",
+    "stripeId": ""
   },
   {
     "name": "Old skool",
@@ -251,7 +274,8 @@
     "type": "trainer",
     "color": "red",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/paul-gaudriault-a-QH9MAAVNI-unsplash.jpg"
+    "image": "http://localhost:3000/assets/paul-gaudriault-a-QH9MAAVNI-unsplash.jpg",
+    "stripeId": ""
   },
   {
     "name": "Definer 354",
@@ -262,7 +286,8 @@
     "type": "trainer",
     "color": "multi",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/omar-prestwich-jLEGurepDco-unsplash.jpg"
+    "image": "http://localhost:3000/assets/omar-prestwich-jLEGurepDco-unsplash.jpg",
+    "stripeId": ""
   },
   {
     "name": "FlyKnit",
@@ -273,7 +298,8 @@
     "type": "trainer",
     "color": "red",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/revolt-164_6wVEHfI-unsplash.jpg"
+    "image": "http://localhost:3000/assets/revolt-164_6wVEHfI-unsplash.jpg",
+    "stripeId": ""
   },
   {
     "name": "Black 705",
@@ -284,7 +310,8 @@
     "type": "Clothes",
     "color": "black",
     "size": ["s", "m", "l", "xl", "xxl"],
-    "image": "http://localhost:3000/assets/ryan-hoffman-6Nub980bI3I-unsplash.jpg"
+    "image": "http://localhost:3000/assets/ryan-hoffman-6Nub980bI3I-unsplash.jpg",
+    "stripeId": ""
   },
   {
     "name": "California 705",
@@ -295,7 +322,8 @@
     "type": "Clothes",
     "color": "black",
     "size": ["s", "m", "l", "xl", "xxl"],
-    "image": "http://localhost:3000/assets/ryan-hoffman-982Nb-awyVE-unsplash.jpg"
+    "image": "http://localhost:3000/assets/ryan-hoffman-982Nb-awyVE-unsplash.jpg",
+    "stripeId": ""
   },
   {
     "name": "Classic 705",
@@ -306,7 +334,8 @@
     "type": "Clothes",
     "color": "black",
     "size": ["s", "m", "l", "xl", "xxl"],
-    "image": "http://localhost:3000/assets/ryan-hoffman-A7f7XRKgUWc-unsplash.jpg"
+    "image": "http://localhost:3000/assets/ryan-hoffman-A7f7XRKgUWc-unsplash.jpg",
+    "stripeId": ""
   },
   {
     "name": "Pack of 705",
@@ -317,7 +346,8 @@
     "type": "Clothes",
     "color": "black",
     "size": ["s", "m", "l", "xl", "xxl"],
-    "image": "http://localhost:3000/assets/ryan-hoffman-Cs4GVbMqKGY-unsplash.jpg"
+    "image": "http://localhost:3000/assets/ryan-hoffman-Cs4GVbMqKGY-unsplash.jpg",
+    "stripeId": ""
   },
   {
     "name": "705 Shirt",
@@ -328,7 +358,8 @@
     "type": "Clothes",
     "color": "black",
     "size": ["s", "m", "l", "xl", "xxl"],
-    "image": "http://localhost:3000/assets/ryan-hoffman-u6n1HrW0sdQ-unsplash.jpg"
+    "image": "http://localhost:3000/assets/ryan-hoffman-u6n1HrW0sdQ-unsplash.jpg",
+    "stripeId": ""
   },
   {
     "name": "705 waterBottle",
@@ -339,7 +370,8 @@
     "type": "Equipment",
     "color": "black",
     "size": ["One Size"],
-    "image": "http://localhost:3000/assets/ryan-hoffman-371ROS34quI-unsplash.jpg"
+    "image": "http://localhost:3000/assets/ryan-hoffman-371ROS34quI-unsplash.jpg",
+    "stripeId": ""
   },
   {
     "name": "Smash V2",
@@ -350,7 +382,8 @@
     "type": "trainer",
     "color": "white",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/the-dk-photography-7Uwh8QXYdXQ-unsplash.jpg"
+    "image": "http://localhost:3000/assets/the-dk-photography-7Uwh8QXYdXQ-unsplash.jpg",
+    "stripeId": ""
   },
   {
     "name": "Mongram ",
@@ -361,6 +394,7 @@
     "type": "trainer",
     "color": "white",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/trendest-studio-XZ3EmAIWuz0-unsplash.jpg"
+    "image": "http://localhost:3000/assets/trendest-studio-XZ3EmAIWuz0-unsplash.jpg",
+    "stripeId": ""
   }
 ]

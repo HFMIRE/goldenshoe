@@ -10,6 +10,7 @@ const ProductSchema = new mongoose.Schema({
   image: String,
   color: String,
   size: [mongoose.Mixed],
+  stripeId: String,
 });
 
 const Product =
