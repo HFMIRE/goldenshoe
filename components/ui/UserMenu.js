@@ -8,10 +8,9 @@ import {
   MenuDivider,
   IconButton,
   Center,
-  Text,
 } from "@chakra-ui/react";
 import { FaUser } from "react-icons/fa";
-import Link from "next/link";
+import NextLink from "next/link";
 const UserMenu = ({ name }) => {
   let username;
   if (name.includes("@")) {
@@ -19,7 +18,6 @@ const UserMenu = ({ name }) => {
   } else {
     username = name;
   }
-  console.log(name);
   return (
     <Box>
       <Flex alignItems={"center"}>
@@ -45,9 +43,9 @@ const UserMenu = ({ name }) => {
 
             <MenuItem>Order</MenuItem>
             <MenuItem>Setting</MenuItem>
-            <Link href="/api/auth/logout">
+            <NextLink href="/api/auth/logout">
               <MenuItem>Logout</MenuItem>
-            </Link>
+            </NextLink>
           </MenuList>
         </Menu>
       </Flex>

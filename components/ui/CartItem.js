@@ -1,15 +1,21 @@
 import {
   CloseButton,
   Flex,
-  Link,
+  HStack,
+  Text,
   Select,
-  SelectProps,
   useColorModeValue,
+  Button,
 } from "@chakra-ui/react";
 import * as React from "react";
 import { PriceTag } from "./PriceTag";
+import { useDispatch } from "react-redux";
 import { CartProductMeta } from "./CartProductMeta";
-
+import {
+  incrementQuantity,
+  decrementQuantity,
+  removeFromCart,
+} from "../../redux/cart.slice";
 const QuantitySelect = (props) => {
   return (
     <Select
@@ -26,19 +32,8 @@ const QuantitySelect = (props) => {
   );
 };
 
-export const CartItem = (props) => {
-  const {
-    isGiftWrapping,
-    name,
-    description,
-    quantity,
-    imageUrl,
-    currency,
-    price,
-    onChangeQuantity,
-    onClickDelete,
-  } = props;
-
+const CartItem = ({ item }) => {
+  const dispatch = useDispatch();
   return (
     <Flex
       direction={{ base: "column", md: "row" }}
@@ -46,50 +41,45 @@ export const CartItem = (props) => {
       align="center"
     >
       <CartProductMeta
-        name={name}
-        description={description}
-        image={imageUrl}
-        isGiftWrapping={isGiftWrapping}
+        name={item.name}
+        description={item.description}
+        image={item.image}
       />
-
-      {/* Desktop */}
       <Flex
         width="full"
         justify="space-between"
         display={{ base: "none", md: "flex" }}
       >
-        <QuantitySelect
-          value={quantity}
-          onChange={(e) => {
-            onChangeQuantity?.(+e.currentTarget.value);
-          }}
-        />
-        <PriceTag price={price} currency={currency} />
-        <CloseButton
-          aria-label={`Delete ${name} from cart`}
-          onClick={onClickDelete}
-        />
-      </Flex>
+        <HStack>
+          <Button
+            colorScheme="purple"
+            onClick={() => dispatch(incrementQuantity(item._id))}
+          >
+            +
+          </Button>
 
-      {/* Mobile */}
-      <Flex
-        mt="4"
-        align="center"
-        width="full"
-        justify="space-between"
-        display={{ base: "flex", md: "none" }}
-      >
-        <Link fontSize="sm" textDecor="underline">
-          Delete
-        </Link>
-        <QuantitySelect
-          value={quantity}
-          onChange={(e) => {
-            onChangeQuantity?.(+e.currentTarget.value);
-          }}
+          <Text p={5}>{item.quantity}</Text>
+
+          <Button
+            colorScheme="purple"
+            onClick={() => dispatch(decrementQuantity(item._id))}
+          >
+            -
+          </Button>
+        </HStack>
+
+        <PriceTag
+          price={parseInt(item.price.$numberDecimal)}
+          currency={"GBP"}
         />
-        <PriceTag price={price} currency={currency} />
+
+        <CloseButton
+          aria-label={`Delete ${item.name} from cart`}
+          onChange={() => dispatch(removeFromCart(item._id))}
+        />
       </Flex>
     </Flex>
   );
 };
+
+export default CartItem;

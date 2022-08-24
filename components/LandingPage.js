@@ -5,7 +5,7 @@ export const LandingPage = () => {
   return (
     <>
       <HeroComp />
-      <SpanningCol />
+      {/* <SpanningCol /> */}
     </>
   );
 };

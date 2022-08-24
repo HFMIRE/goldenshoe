@@ -1,8 +1,12 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
-import OrderContextProvider from "../contexts/orderContext";
 import { UserProvider } from "@auth0/nextjs-auth0";
 import React from "react";
+import { Provider } from "react-redux";
+import store from "../redux/store";
+import { saveState } from "../redux/browser-storage";
+import { PersistGate } from "redux-persist/integration/react";
+import { debounce } from "debounce";
 const theme = extendTheme({
   colors: {
     brand: {
@@ -12,16 +16,22 @@ const theme = extendTheme({
     },
   },
 });
+store.subscribe(
+  debounce(() => {
+    saveState(store.getState());
+  }, 800)
+);
 
 export default function App({ Component, pageProps }) {
   if (!process.browser) React.useLayoutEffect = React.useEffect;
+
   return (
     <ChakraProvider theme={theme}>
-      <UserProvider>
-        <OrderContextProvider>
+      <Provider store={store}>
+        <UserProvider>
           <Component {...pageProps} />
-        </OrderContextProvider>
-      </UserProvider>
+        </UserProvider>
+      </Provider>
     </ChakraProvider>
   );
 }

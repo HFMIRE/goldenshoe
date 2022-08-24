@@ -2,11 +2,11 @@ import {
   Button,
   Flex,
   Heading,
-  Link,
   Stack,
   Text,
   useColorModeValue as mode,
 } from "@chakra-ui/react";
+import NextLink from "next/link";
 import * as React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { formatPrice } from "./PriceTag";
@@ -29,23 +29,23 @@ export const CartOrderSummary = () => {
       <Heading size="md">Order Summary</Heading>
 
       <Stack spacing="6">
-        {/* <OrderSummaryItem label="Subtotal" value={formatPrice(597)} /> */}
-        <OrderSummaryItem label="Shipping + Tax">
-          <Link href="#" textDecor="underline">
-            Calculate shipping
-          </Link>
+        <OrderSummaryItem label="Subtotal" value={formatPrice(597)} />
+        <OrderSummaryItem label="Delivery Fee">
+          <NextLink href="#" textDecor="underline">
+            Free
+          </NextLink>
         </OrderSummaryItem>
         <OrderSummaryItem label="Coupon Code">
-          <Link href="#" textDecor="underline">
+          <NextLink href="#" textDecor="underline">
             Add coupon code
-          </Link>
+          </NextLink>
         </OrderSummaryItem>
         <Flex justify="space-between">
           <Text fontSize="lg" fontWeight="semibold">
             Total
           </Text>
           <Text fontSize="xl" fontWeight="extrabold">
-            {/* {formatPrice(597)} */}
+            {formatPrice(597)}
           </Text>
         </Flex>
       </Stack>

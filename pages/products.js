@@ -7,7 +7,6 @@ import useSWR from "swr";
 const URL = "https://goldenshoe.vercel.app/api/product";
 const AllProducts = ({ fallbackData }) => {
   const { data, error } = useSWR(URL, fetcher, { fallbackData });
-  console.log(data);
 
   if (error) {
     <AlertMsg />;

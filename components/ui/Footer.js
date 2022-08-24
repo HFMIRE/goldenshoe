@@ -4,11 +4,11 @@ import {
   Stack,
   SimpleGrid,
   Text,
-  Link,
   VisuallyHidden,
   chakra,
   useColorModeValue,
 } from "@chakra-ui/react";
+import NextLink from "next/link";
 import { FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
 import ReactStoreBadges from "react-store-badges";
 
@@ -54,26 +54,26 @@ export default function LargeWithAppLinksAndSocial() {
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
           <Stack align={"flex-start"}>
             <ListHeader>Shoie Membership</ListHeader>
-            <Link href={"#"}>Find a store</Link>
-            <Link href={"#"}>Student Discount</Link>
-            <Link href={"#"}>Promo Code</Link>
-            <Link href={"#"}>GS Journal </Link>
+            <NextLink href={"#"}>Find a store</NextLink>
+            <NextLink href={"#"}>Student Discount</NextLink>
+            <NextLink href={"#"}>Promo Code</NextLink>
+            <NextLink href={"#"}>GS Journal </NextLink>
           </Stack>
 
           <Stack align={"flex-start"}>
             <ListHeader>Golden Shoes</ListHeader>
-            <Link href={"#"}>About Us</Link>
-            <Link href={"#"}>Sustainability</Link>
-            <Link href={"#"}>News</Link>
-            <Link href={"#"}>Career</Link>
+            <NextLink href={"#"}>About Us</NextLink>
+            <NextLink href={"#"}>Sustainability</NextLink>
+            <NextLink href={"#"}>News</NextLink>
+            <NextLink href={"#"}>Career</NextLink>
           </Stack>
 
           <Stack align={"flex-start"}>
             <ListHeader>Get Help</ListHeader>
-            <Link href={"#"}>Returns</Link>
-            <Link href={"#"}>Order Status</Link>
-            <Link href={"#"}>Shipping and Delivery</Link>
-            <Link href={"#"}>Contact us</Link>
+            <NextLink href={"#"}>Returns</NextLink>
+            <NextLink href={"#"}>Order Status</NextLink>
+            <NextLink href={"#"}>Shipping and Delivery</NextLink>
+            <NextLink href={"#"}>Contact us</NextLink>
           </Stack>
 
           <Stack align={"flex-start"}>

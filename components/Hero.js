@@ -1,5 +1,6 @@
 import { Button, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
-import Link from "next/Link";
+
+import NextLink from "next/link";
 export default function Hero() {
   return (
     <Stack minH={"80vh"} direction={{ base: "column", md: "row" }}>
@@ -29,7 +30,7 @@ export default function Hero() {
             repudiandae consequuntur voluptatum laborum.
           </Text>
           <Stack direction={{ base: "column", md: "row" }} spacing={4} p={3}>
-            <Link href={"/menu"}>
+            <NextLink href={"/menu"}>
               <Button
                 rounded={"5px"}
                 bg={"orange.400"}
@@ -40,7 +41,7 @@ export default function Hero() {
               >
                 Order Now
               </Button>
-            </Link>
+            </NextLink>
           </Stack>
         </Stack>
       </Flex>

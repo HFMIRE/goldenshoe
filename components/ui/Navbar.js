@@ -3,7 +3,6 @@ import {
   Flex,
   Text,
   IconButton,
-  Button,
   Stack,
   Collapse,
   Icon,
@@ -15,6 +14,7 @@ import {
   useBreakpointValue,
   useDisclosure,
   Image,
+  HStack,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import {
@@ -23,11 +23,23 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
-import UserMenu from "./UserMenu";
 import { LoginComponent } from "./LoginComponent";
+import { useSelector } from "react-redux";
+import React, { useEffect, useState } from "react";
+import { BsCart2 } from "react-icons/bs";
 
-export default function WithSubnavigation() {
+export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
+  const [cartItemValue, setCartitemValue] = useState();
+  const cart = useSelector((state) => state.cart);
+
+  useEffect(() => {
+    let val = cart.reduce(
+      (accumulator, item) => accumulator + item.quantity,
+      0
+    );
+    setCartitemValue(val);
+  }, [cart]);
 
   return (
     <Box>
@@ -66,12 +78,12 @@ export default function WithSubnavigation() {
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
           >
-            <Link href="/">
+            <NextLink href="/">
               <Image
                 src="https://goldenshoe.vercel.app/assets/GoldenShoeLogo.svg"
                 alt="Sushi Logo"
               />
-            </Link>
+            </NextLink>
           </Text>
           <Flex display={{ base: "none", md: "flex" }} ml={10} mt={3}>
             <DesktopNav />
@@ -85,6 +97,14 @@ export default function WithSubnavigation() {
           spacing={6}
         >
           <LoginComponent />
+          <NextLink href="/cart" passHref>
+            <a>
+              <HStack>
+                <BsCart2 color={"purple.50"} size={28} />
+                <Text>({cartItemValue})</Text>
+              </HStack>
+            </a>
+          </NextLink>
         </Stack>
       </Flex>
 

@@ -1,18 +1,19 @@
 import {
   Box,
+  Button,
   Flex,
   Heading,
   HStack,
   Icon,
+  Text,
   Image,
-  Link,
   Skeleton,
   Stack,
   useColorModeValue,
 } from "@chakra-ui/react";
 import * as React from "react";
 import { FaArrowRight } from "react-icons/fa";
-
+import NextLink from "next/link";
 const HeroComp = () => {
   return (
     <Box
@@ -49,14 +50,16 @@ const HeroComp = () => {
               </Heading>
             </Stack>
             <HStack spacing="3">
-              <Link
-                href="/products"
-                color={useColorModeValue("purple.500", "purple.300")}
-                fontWeight="bold"
-                fontSize="lg"
-              >
-                Discover now
-              </Link>
+              <NextLink href="/products">
+                <Text
+                  color={useColorModeValue("purple.500", "purple.300")}
+                  fontWeight="bold"
+                  fontSize="lg"
+                >
+                  {" "}
+                  Discover now
+                </Text>
+              </NextLink>
               <Icon
                 color={useColorModeValue("purple.500", "purple.300")}
                 as={FaArrowRight}

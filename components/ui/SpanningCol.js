@@ -1,90 +1,60 @@
 import {
   Box,
+  chakra,
   SimpleGrid,
-  Icon,
-  Text,
-  Stack,
-  Flex,
-  VStack,
-  Button,
-  useBreakpointValue,
+  Stat,
+  StatLabel,
+  StatNumber,
+  useColorModeValue,
+  Image,
 } from "@chakra-ui/react";
-import { FcAssistant, FcDonate, FcInTransit } from "react-icons/fc";
 
-const Feature = ({ title, text, icon }) => {
+function StatsCard(props) {
+  const { title, stat } = props;
   return (
-    <Stack>
-      <Flex
-        w={16}
-        h={16}
-        align={"center"}
-        justify={"center"}
-        color={"white"}
-        rounded={"full"}
-        bg={"gray.100"}
-        mb={1}
-      >
-        {icon}
-      </Flex>
-      <Text fontWeight={600}>{title}</Text>
-      <Text color={"gray.600"}>{text}</Text>
-    </Stack>
+    <Stat
+      px={{ base: 4, md: 8 }}
+      py={"5"}
+      shadow={"xl"}
+      border={"1px solid"}
+      borderColor={useColorModeValue("gray.800", "gray.500")}
+      rounded={"lg"}
+    >
+      {" "}
+      <Image
+        rounded={"lg"}
+        height={340}
+        width={452}
+        objectFit={"cover"}
+        alt={"alt"}
+        src={
+          '"https://goldenshoe.vercel.app/assets/limor-zellermayer-JtOxBIXI4Lw-unsplash.jpg"'
+        }
+      />
+      <StatLabel fontWeight={"medium"}>{title}</StatLabel>
+      <StatNumber fontSize={"2xl"} fontWeight={"medium"}>
+        {stat}
+      </StatNumber>
+    </Stat>
   );
-};
+}
 
-export default function SpanningCol() {
+export default function BasicStatistics() {
   return (
-    // <SimpleGrid>
-    <Box p={4}>
-      <Box
-        backgroundImage={"url(https://bit.ly/dan-abramov)"}
-        w={"300px"}
-        h={"300px"}
-        backgroundSize={"cover"}
-        backgroundPosition={"center center"}
+    <Box maxW="7xl" mx={"auto"} pt={5} px={{ base: 2, sm: 12, md: 17 }}>
+      <chakra.h1
+        textAlign={"center"}
+        fontSize={"4xl"}
+        py={10}
+        fontWeight={"bold"}
       >
-        <VStack
-          w={"full"}
-          justify={"center"}
-          px={useBreakpointValue({ base: 4, md: 8 })}
-        >
-          <Stack maxW={"2xl"} align={"flex-start"} spacing={6} p={3}>
-            <Text
-              color={"white"}
-              fontWeight={700}
-              lineHeight={1.2}
-              fontSize={useBreakpointValue({ base: "xl", md: "2xl" })}
-            >
-              Men
-            </Text>
-            <Stack direction={"row"}>
-              <Button
-                bg={"purple.400"}
-                rounded={"full"}
-                color={"white"}
-                _hover={{ bg: "purple.500" }}
-              >
-                Show me more
-              </Button>
-            </Stack>
-          </Stack>
-        </VStack>
-      </Box>
-
-      <Feature
-        icon={<Icon as={FcDonate} w={10} h={10} />}
-        title={"Unlimited Donations"}
-        text={
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore..."
-        }
-      />
-      <Feature
-        icon={<Icon as={FcInTransit} w={10} h={10} />}
-        title={"Instant Delivery"}
-        text={
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore..."
-        }
-      />
+        What is our company doing?
+      </chakra.h1>
+      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
+        <StatsCard title={"We serve"} stat={"50,000 people"} />
+        <StatsCard title={"In"} stat={"30 different countries"} />
+        <StatsCard title={"Who speak"} stat={"100 different languages"} />
+      </SimpleGrid>
     </Box>
   );
 }
