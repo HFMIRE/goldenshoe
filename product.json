@@ -1,6 +1,5 @@
 [
   {
-    "_id": "",
     "name": "Chuck Taylor All Star",
     "description": "The most iconic converse ever",
     "brand": "Converse",
@@ -11,18 +10,6 @@
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/camila-damasio-mWYhrOiAgmA-unsplash.jpg",
     "stripeId": "price_1LY697CZ5p8wpYXZ4lc21wpQ"
-  },
-  {
-    "name": "Black BasketBall",
-    "description": "The most iconic ball ever, in collaboration with the NBA",
-    "brand": "Spalding",
-    "price": "30.00",
-    "category": "Unisex",
-    "type": "Equipment",
-    "color": "black",
-    "size": ["One Size"],
-    "image": "http://localhost:3000/assets/anastasiia-rozumna-yBYt07MdNi8-unsplash.jpg",
-    "stripeId": "price_1LY69zCZ5p8wpYXZ2vMu3j8f"
   },
   {
     "name": "Panda Air Force 1",
@@ -59,18 +46,6 @@
     "size": [5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/cj-dayrit-2reXfzCi0Kg-unsplash.jpg",
     "stripeId": "price_1LY6C1CZ5p8wpYXZgE2yFedO"
-  },
-  {
-    "name": "YaHweH T-Shirt",
-    "description": "The ultimate black shirt",
-    "brand": "Yireh",
-    "category": "Men",
-    "price": "35.00",
-    "type": "Clothes",
-    "color": "black",
-    "size": ["s", "m", "l", "xl", "xxl"],
-    "image": "http://localhost:3000/assets/cj-dayrit-2reXfzCi0Kg-unsplash.jpg",
-    "stripeId": "price_1LY6CVCZ5p8wpYXZhYmuNPgl"
   },
   {
     "name": "Every Dad shoe",
@@ -145,31 +120,6 @@
     "stripeId": "price_1LY6T3CZ5p8wpYXZEf7kv8f6"
   },
   {
-    "name": "Basic Hat",
-    "description": "Basically a hat",
-    "brand": "Basic",
-    "category": "Unisex",
-    "price": "15.00",
-    "type": "Clothes",
-    "color": "white",
-    "size": ["One Size"],
-    "image": "http://localhost:3000/assets/mediamodifier-t8HiP3e5abg-unsplash.jpg",
-    "stripeId": "price_1LY6TWCZ5p8wpYXZnEKLn9we"
-    
-  },
-  {
-    "name": "Basic Hat",
-    "description": "Basically a hat",
-    "brand": "Basic",
-    "category": "Unisex",
-    "price": "15.00",
-    "type": "Clothes",
-    "color": "grey",
-    "size": ["One Size"],
-    "image": "http://localhost:3000/assets/yang-deng-2loKxdi6Hmo-unsplash.jpg",
-    "stripeId": "price_1LY6TWCZ5p8wpYXZnEKLn9we"
-  },
-  {
     "name": "Stan Smith",
     "description": "Basic and essential: the stan smith",
     "brand": "Adidas",
@@ -215,7 +165,7 @@
     "color": "blue",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/mnz-mCRFMMRoNJE-unsplash.jpg",
-    "stripeId": ""
+    "stripeId": "price_1LapDJCZ5p8wpYXZna6erQvH"
   },
   {
     "name": "Bowling 43",
@@ -227,11 +177,11 @@
     "color": "grey",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/mnz-MdsbS4UGZqg-unsplash.jpg",
-    "stripeId": ""
+    "stripeId": "price_1LapE1CZ5p8wpYXZ2jkKEzT1"
   },
   {
     "name": "Orignal 345",
-    "description": "Icons",
+    "description": "For the Icon, by Icons",
     "brand": "Adidas",
     "category": "Men",
     "price": "95.00",
@@ -239,7 +189,7 @@
     "color": "grey",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/mnz-Srj5F1y7p0k-unsplash.jpg",
-    "stripeId": ""
+    "stripeId": "price_1LapF5CZ5p8wpYXZcFAGox04"
   },
   {
     "name": "Air Jordan Two High",
@@ -263,19 +213,7 @@
     "color": "orange",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/mutzii-fmDCrqPQKog-unsplash.jpg",
-    "stripeId": ""
-  },
-  {
-    "name": "Old skool",
-    "description": "The old skool: classic",
-    "brand": "Vans",
-    "category": "Men",
-    "price": "115.00",
-    "type": "trainer",
-    "color": "red",
-    "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "image": "http://localhost:3000/assets/paul-gaudriault-a-QH9MAAVNI-unsplash.jpg",
-    "stripeId": ""
+    "stripeId": "price_1LapFqCZ5p8wpYXZZ9RitJ5J"
   },
   {
     "name": "Definer 354",
@@ -287,7 +225,7 @@
     "color": "multi",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/omar-prestwich-jLEGurepDco-unsplash.jpg",
-    "stripeId": ""
+    "stripeId": "price_1LapHmCZ5p8wpYXZKgHP96u8"
   },
   {
     "name": "FlyKnit",
@@ -299,79 +237,7 @@
     "color": "red",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/revolt-164_6wVEHfI-unsplash.jpg",
-    "stripeId": ""
-  },
-  {
-    "name": "Black 705",
-    "description": "Logo shirt",
-    "brand": "750",
-    "category": "Unisex",
-    "price": "35.00",
-    "type": "Clothes",
-    "color": "black",
-    "size": ["s", "m", "l", "xl", "xxl"],
-    "image": "http://localhost:3000/assets/ryan-hoffman-6Nub980bI3I-unsplash.jpg",
-    "stripeId": ""
-  },
-  {
-    "name": "California 705",
-    "description": "California Crewneck",
-    "brand": "750",
-    "category": "Unisex",
-    "price": "35.00",
-    "type": "Clothes",
-    "color": "black",
-    "size": ["s", "m", "l", "xl", "xxl"],
-    "image": "http://localhost:3000/assets/ryan-hoffman-982Nb-awyVE-unsplash.jpg",
-    "stripeId": ""
-  },
-  {
-    "name": "Classic 705",
-    "description": "classic Crewneck",
-    "brand": "750",
-    "category": "Unisex",
-    "price": "35.00",
-    "type": "Clothes",
-    "color": "black",
-    "size": ["s", "m", "l", "xl", "xxl"],
-    "image": "http://localhost:3000/assets/ryan-hoffman-A7f7XRKgUWc-unsplash.jpg",
-    "stripeId": ""
-  },
-  {
-    "name": "Pack of 705",
-    "description": "3 classic Crewneck",
-    "brand": "750",
-    "category": "Unisex",
-    "price": "35.00",
-    "type": "Clothes",
-    "color": "black",
-    "size": ["s", "m", "l", "xl", "xxl"],
-    "image": "http://localhost:3000/assets/ryan-hoffman-Cs4GVbMqKGY-unsplash.jpg",
-    "stripeId": ""
-  },
-  {
-    "name": "705 Shirt",
-    "description": "classic shirt",
-    "brand": "750",
-    "category": "Unisex",
-    "price": "35.00",
-    "type": "Clothes",
-    "color": "black",
-    "size": ["s", "m", "l", "xl", "xxl"],
-    "image": "http://localhost:3000/assets/ryan-hoffman-u6n1HrW0sdQ-unsplash.jpg",
-    "stripeId": ""
-  },
-  {
-    "name": "705 waterBottle",
-    "description": "The waterBottle",
-    "brand": "750",
-    "category": "Unisex",
-    "price": "25.00",
-    "type": "Equipment",
-    "color": "black",
-    "size": ["One Size"],
-    "image": "http://localhost:3000/assets/ryan-hoffman-371ROS34quI-unsplash.jpg",
-    "stripeId": ""
+    "stripeId": "price_1LapN8CZ5p8wpYXZdaMBTELM"
   },
   {
     "name": "Smash V2",
@@ -383,10 +249,10 @@
     "color": "white",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/the-dk-photography-7Uwh8QXYdXQ-unsplash.jpg",
-    "stripeId": ""
+    "stripeId": "price_1LapHmCZ5p8wpYXZKgHP96u8"
   },
   {
-    "name": "Mongram ",
+    "name": "Mongram",
     "description": "The swag",
     "brand": "Louis Vuitton",
     "category": "Unisex",
@@ -395,6 +261,6 @@
     "color": "white",
     "size": [3, 4, 5, 6, 7, 8, 9, 10, 11],
     "image": "http://localhost:3000/assets/trendest-studio-XZ3EmAIWuz0-unsplash.jpg",
-    "stripeId": ""
+    "stripeId": "price_1LapJCCZ5p8wpYXZxzMPE5fL"
   }
 ]

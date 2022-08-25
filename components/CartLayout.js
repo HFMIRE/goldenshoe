@@ -5,18 +5,30 @@ import {
   HStack,
   Text,
   Link,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
   Stack,
   useColorModeValue as mode,
 } from "@chakra-ui/react";
-import * as React from "react";
+import { useState, useEffect } from "react";
 import CartItem from "./ui/CartItem";
 import NextLink from "next/link";
 import { CartOrderSummary } from "./ui/CartOrderSummary";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
+import { ChevronLeftIcon } from "@chakra-ui/icons";
 
 const CartLayout = () => {
+  const [cartItemValue, setCartitemValue] = useState();
   const cart = useSelector((state) => state.cart);
-  console.log("cart", cart);
+
+  useEffect(() => {
+    let val = cart.reduce(
+      (accumulator, item) => accumulator + item.quantity,
+      0
+    );
+    setCartitemValue(val);
+  }, [cart]);
   return (
     <Box
       maxW={{ base: "3xl", lg: "7xl" }}
@@ -25,15 +37,29 @@ const CartLayout = () => {
       py={{ base: "6", md: "8", lg: "12" }}
     >
       {cart.length === 0 ? (
-        <HStack mt="6" fontWeight="semibold">
-          <Text fontSize={"md"}>Your Cart is Empty!</Text>
-          <p>or</p>
-          <NextLink href="/products" passHref>
-            <Link color={mode("purple.500", "purple.200")}>
-              Continue shopping
-            </Link>
-          </NextLink>
-        </HStack>
+        <>
+          <HStack>
+            <NextLink href="/products">
+              <ChevronLeftIcon w={6} h={6} color="purple.300" />
+            </NextLink>
+            <Breadcrumb>
+              <BreadcrumbItem>
+                <NextLink href="/products">
+                  <BreadcrumbLink>Cart</BreadcrumbLink>
+                </NextLink>
+              </BreadcrumbItem>
+            </Breadcrumb>
+          </HStack>
+          <HStack mt="6" fontWeight="semibold">
+            <Text fontSize={"md"}>Your Cart is Empty!</Text>
+            <p>or</p>
+            <NextLink href="/products" passHref>
+              <Link color={mode("purple.500", "purple.200")}>
+                Continue shopping
+              </Link>
+            </NextLink>
+          </HStack>
+        </>
       ) : (
         <Stack
           direction={{ base: "column", lg: "row" }}
@@ -42,7 +68,7 @@ const CartLayout = () => {
         >
           <Stack spacing={{ base: "8", md: "10" }} flex="2">
             <Heading fontSize="2xl" fontWeight="extrabold">
-              Shopping Cart (3 items)
+              Shopping Cart ({cartItemValue} items)
             </Heading>
 
             <Stack spacing="6">

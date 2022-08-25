@@ -15,11 +15,9 @@ export default function Product() {
 
   return (
     <Box>
-      <Layout>
-        <Box p={5} mb={5}>
-          {data && <ProductPage data={data} error={error} id={id} />}
-        </Box>
-      </Layout>
+      <Box p={5} mb={5}>
+        {data && <ProductPage data={data} error={error} id={id} />}
+      </Box>
     </Box>
   );
 }

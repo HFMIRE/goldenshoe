@@ -27,11 +27,6 @@ store.subscribe(
 export default function App({ Component, pageProps }) {
   if (!process.browser) React.useLayoutEffect = React.useEffect;
 
-  // const dispatch = useDispatch();
-  // useEffect(() => {
-  //   loadState();
-  // }, [dispatch]);
-
   return (
     <ChakraProvider theme={theme}>
       <Provider store={store}>

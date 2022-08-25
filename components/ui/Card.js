@@ -8,11 +8,9 @@ import {
   LinkBox,
   LinkOverlay,
 } from "@chakra-ui/react";
-import { useDispatch, useSelector } from "react-redux";
 import NextLink from "next/link";
+
 export default function Card({ product }) {
-  const cart = useSelector((state) => state.cart);
-  const dispatch = useDispatch();
   return (
     <Center py={12}>
       {product && (

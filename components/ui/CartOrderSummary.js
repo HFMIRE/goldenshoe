@@ -9,7 +9,8 @@ import {
 import NextLink from "next/link";
 import * as React from "react";
 import { FaArrowRight } from "react-icons/fa";
-import { formatPrice } from "./PriceTag";
+import { useSelector } from "react-redux";
+import { initiateCheckout } from "../../libs/payment";
 
 const OrderSummaryItem = (props) => {
   const { label, value, children } = props;
@@ -24,12 +25,31 @@ const OrderSummaryItem = (props) => {
 };
 
 export const CartOrderSummary = () => {
+  const cart = useSelector((state) => state.cart);
+  const getTotalPrice = () => {
+    return cart.reduce(
+      (accumulator, item) =>
+        accumulator + item.quantity * item.price.$numberDecimal,
+      0
+    );
+  };
+  function checkout() {
+    initiateCheckout({
+      lineItems: cart.map(({ stripeId, quantity }) => {
+        return {
+          price: stripeId,
+          quantity,
+        };
+      }),
+    });
+  }
+
   return (
     <Stack spacing="8" borderWidth="1px" rounded="lg" padding="8" width="full">
       <Heading size="md">Order Summary</Heading>
 
       <Stack spacing="6">
-        <OrderSummaryItem label="Subtotal" value={formatPrice(597)} />
+        <OrderSummaryItem label="Subtotal" value={`£${getTotalPrice()}.00`} />
         <OrderSummaryItem label="Delivery Fee">
           <NextLink href="#" textDecor="underline">
             Free
@@ -45,7 +65,7 @@ export const CartOrderSummary = () => {
             Total
           </Text>
           <Text fontSize="xl" fontWeight="extrabold">
-            {formatPrice(597)}
+            £{`${getTotalPrice()}.00`}
           </Text>
         </Flex>
       </Stack>
@@ -54,6 +74,7 @@ export const CartOrderSummary = () => {
         size="lg"
         fontSize="md"
         rightIcon={<FaArrowRight />}
+        onClick={checkout}
       >
         Checkout
       </Button>

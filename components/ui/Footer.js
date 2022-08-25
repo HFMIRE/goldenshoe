@@ -53,7 +53,7 @@ export default function LargeWithAppLinksAndSocial() {
       <Container as={Stack} maxW={"6xl"} py={10} mb={10}>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
           <Stack align={"flex-start"}>
-            <ListHeader>Shoie Membership</ListHeader>
+            <ListHeader>Golden Shoes Membership</ListHeader>
             <NextLink href={"#"}>Find a store</NextLink>
             <NextLink href={"#"}>Student Discount</NextLink>
             <NextLink href={"#"}>Promo Code</NextLink>

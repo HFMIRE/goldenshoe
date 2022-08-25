@@ -9,7 +9,6 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
-  Select,
   Box,
   Icon,
   HStack,
@@ -35,7 +34,6 @@ const ProductDisplay = ({ data }) => {
   const [size, setSize] = useState();
 
   const stripeId = data.stripeId;
-  console.log("cart", cart);
 
   return (
     <SimpleGrid columns={{ base: 1, md: 2 }} spacing={20}>

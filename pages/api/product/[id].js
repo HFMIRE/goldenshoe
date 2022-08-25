@@ -4,7 +4,6 @@ import Product from "../../../models/Product";
 const ProductData = async (req, res) => {
   await dbConnect();
   const { id } = req.query;
-  //console.log("id", id);
   try {
     const productData = await Product.find({ _id: id }).exec();
     res.status(200).json({ success: true, data: productData[0] });

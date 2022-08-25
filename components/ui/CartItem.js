@@ -1,12 +1,4 @@
-import {
-  CloseButton,
-  Flex,
-  HStack,
-  Text,
-  Select,
-  useColorModeValue,
-  Button,
-} from "@chakra-ui/react";
+import { CloseButton, Flex, HStack, Text, Button } from "@chakra-ui/react";
 import * as React from "react";
 import { PriceTag } from "./PriceTag";
 import { useDispatch } from "react-redux";
@@ -16,21 +8,6 @@ import {
   decrementQuantity,
   removeFromCart,
 } from "../../redux/cart.slice";
-const QuantitySelect = (props) => {
-  return (
-    <Select
-      maxW="64px"
-      aria-label="Select quantity"
-      focusBorderColor={useColorModeValue("purple.500", "purple.200")}
-      {...props}
-    >
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-    </Select>
-  );
-};
 
 const CartItem = ({ item }) => {
   const dispatch = useDispatch();
@@ -46,9 +23,10 @@ const CartItem = ({ item }) => {
         image={item.image}
       />
       <Flex
-        width="full"
+        direction={{ base: "column", md: "row" }}
         justify="space-between"
-        display={{ base: "none", md: "flex" }}
+        align="center"
+        p={5}
       >
         <HStack>
           <Button
@@ -66,17 +44,15 @@ const CartItem = ({ item }) => {
           >
             -
           </Button>
+          <PriceTag
+            price={parseInt(item.price.$numberDecimal)}
+            currency={"GBP"}
+          />
+          <CloseButton
+            aria-label={`Delete ${item.name} from cart`}
+            onClick={() => dispatch(removeFromCart(item._id))}
+          />
         </HStack>
-
-        <PriceTag
-          price={parseInt(item.price.$numberDecimal)}
-          currency={"GBP"}
-        />
-
-        <CloseButton
-          aria-label={`Delete ${item.name} from cart`}
-          onChange={() => dispatch(removeFromCart(item._id))}
-        />
       </Flex>
     </Flex>
   );
