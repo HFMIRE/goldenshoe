@@ -10,7 +10,6 @@ import {
 } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
 import NextLink from "next/link";
-
 export default function Card({ product }) {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();

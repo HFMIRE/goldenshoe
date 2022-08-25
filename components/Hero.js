@@ -1,5 +1,12 @@
-import { Button, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
-
+import {
+  Button,
+  Flex,
+  Heading,
+  //  Image,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
+import Image from "next/image";
 import NextLink from "next/link";
 export default function Hero() {
   return (

@@ -1,4 +1,3 @@
-import Layout from "../components/Layout";
 import ProductList from "../components/ProductList";
 import AlertMsg from "../components/ui/AlertMsg";
 import fetcher from "../libs/fetcher";
@@ -14,11 +13,7 @@ const AllProducts = ({ fallbackData }) => {
   if (!data) {
     <div>Loading....</div>;
   }
-  return (
-    <Layout>
-      <ProductList product={data.data} />
-    </Layout>
-  );
+  return <ProductList product={data.data} />;
 };
 export default AllProducts;
 

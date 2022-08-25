@@ -1,10 +1,5 @@
-import Layout from "../components/Layout";
 const checkout = () => {
-  return (
-    <Layout>
-      <div>checkout</div>
-    </Layout>
-  );
+  return <div>checkout</div>;
 };
 
 export default checkout;
