@@ -49,7 +49,7 @@ export const CartOrderSummary = () => {
       <Heading size="md">Order Summary</Heading>
 
       <Stack spacing="6">
-        <OrderSummaryItem label="Subtotal" value={`£${getTotalPrice()}.00`} />
+        <OrderSummaryItem label="Subtotal" value={`£${getTotalPrice()}`} />
         <OrderSummaryItem label="Delivery Fee">
           <NextLink href="#" textDecor="underline">
             Free
@@ -65,7 +65,7 @@ export const CartOrderSummary = () => {
             Total
           </Text>
           <Text fontSize="xl" fontWeight="extrabold">
-            £{`${getTotalPrice()}.00`}
+            £{`${getTotalPrice()}`}
           </Text>
         </Flex>
       </Stack>
